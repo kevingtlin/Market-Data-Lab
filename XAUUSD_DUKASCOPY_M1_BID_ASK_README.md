@@ -145,6 +145,82 @@ At minimum, review:
 - Spread impact on performance.
 - Differences between high-volatility and low-volatility periods.
 
+## Dynamic Risk And Capacity Model
+
+The current trading strategy uses a dynamic risk and capacity framework to convert win rate, annual trade count, stop-loss distribution, broker friction, and position-size limits into one comparable growth-quality standard.
+
+This model should be used after the signal logic is stable enough to estimate:
+
+- `p`: strategy win rate. Example: `0.60` means 60%.
+- `N`: target number of trades per year. Example: `6000`.
+- `r`: risk per trade as a fraction of current equity. Example: `0.02` means 2%.
+- `R`: theoretical payoff ratio in R-multiple terms. Example: `1.0` means 1R.
+- `mu_M`: average stop-loss distance in pips. Current baseline example: `361.5`.
+- `sigma_M`: standard deviation of stop-loss distance in pips.
+- `C`: round-turn commission converted to pips. Baseline institutional friction example: `0.7`.
+
+### Stochastic Commission Drag
+
+Because commission drag is inversely related to stop-loss distance, small or unstable stop distances create nonlinear friction. Treat stop-loss distance `M` as a random variable and use a second-order approximation:
+
+```text
+f_bar = (C / mu_M) * (1 + (sigma_M^2 / mu_M^2))
+```
+
+Interpretation:
+
+- Higher `sigma_M` increases effective commission drag even when average stop distance is unchanged.
+- Smaller `mu_M` increases friction sharply because the fixed commission becomes large relative to the stop.
+- Backtests should estimate `mu_M` and `sigma_M` from actual generated trades, not from manually selected examples.
+
+### Equivalent Growth Standard
+
+The strategy is evaluated against a target annual geometric-growth constant:
+
+```text
+N * [ p * alpha - beta ] = K
+```
+
+Where:
+
+```text
+alpha = r * R * (1 - f_bar) + r * (1 + f_bar) - ((r^2 * R^2) / 2) * (1 - f_bar)^2 + ((r^2) / 2) * (1 + f_bar)^2
+
+beta = r * (1 + f_bar) + ((r^2) / 2) * (1 + f_bar)^2
+```
+
+`K` is the annual system growth-energy constant. In the current specification, the baseline can be locked from a reference setup such as:
+
+```text
+p = 0.60
+N = 6000
+mu_M = 361.5
+```
+
+When testing a new parameter set, calculate:
+
+```text
+current_K = new_N * (new_p * alpha - beta)
+```
+
+If `current_K >= target_K`, the adjusted combination of win rate, trade count, stop-loss behavior, and cost drag meets or exceeds the original strategy standard.
+
+### Implementation Sequence
+
+1. Backtest the strategy with bid/ask execution rules and collect every realized stop-loss distance `M`.
+2. Calculate `mu_M` and `sigma_M` from the trade sample.
+3. Convert broker round-turn commission to `C` in pips.
+4. Calculate `f_bar`.
+5. Calculate `alpha` and `beta`.
+6. Compare `current_K` with the locked baseline `target_K`.
+7. Report the resulting win rate `p`, annualized trade count `N`, average stop distance, stop-distance standard deviation, and pass/fail status.
+
+### Risk Boundaries
+
+- Volatility expansion: if `sigma_M` rises sharply, recalibrate `f_bar`, `alpha`, `beta`, and `current_K`. Higher stop-distance instability reduces the strategy's effective capacity and may require higher win rate, lower trade frequency, lower risk per trade, or stricter filters.
+- Micro-stop trap: if `mu_M` becomes too small relative to `C`, transaction cost can dominate the edge. Use a hard filter such as `mu_M > 20 * C` before accepting a parameter set.
+- Broker capacity ceiling: this geometric compounding model is valid only while position size can scale. If account equity reaches the broker's per-trade maximum, such as 100 standard lots, switch execution to fixed-lot sizing and stop using geometric compounding assumptions for future growth estimates.
+
 ## Later-Stage Bid/Ask Execution Modelling
 
 For later-stage validation, avoid idealized close-price-only backtests. Use bid/ask to model transaction cost more realistically.
@@ -286,6 +362,8 @@ For early validation from `2024-01` onward, either load files from `2024_*`, `20
 8. Merge bid and ask using `timestamp`.
 9. `2026_06` is a partial current-month file; exclude or refresh it when a complete month is required.
 10. Check the audit CSV files before using the dataset.
+11. For capacity evaluation, calculate `p`, annualized `N`, `mu_M`, `sigma_M`, `f_bar`, `alpha`, `beta`, and `current_K` from actual backtest trades.
+12. Accept a new strategy parameter set only when `current_K >= target_K` and the stop-distance and broker-capacity risk boundaries are still satisfied.
 ## TradingView Pepperstone Calibration Note
 
 A small TradingView Pepperstone export was compared against this Dukascopy bid/ask dataset to decide which side should be used for early-stage structure and feature analysis.
