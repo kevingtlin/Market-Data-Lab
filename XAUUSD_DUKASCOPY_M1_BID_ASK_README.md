@@ -1,6 +1,6 @@
 # XAUUSD Dukascopy M1 Bid/Ask History
 
-Generated: 2026-06-24 20:24:09 +08:00
+Generated: 2026-08-23 02:16:39 +08:00
 
 This dataset contains historical one-minute OHLC data for XAUUSD, downloaded from Dukascopy via `dukascopy-node`. It includes both bid and ask prices and is intended for strategy research, backtesting, spread analysis, and later-stage validation with more realistic execution assumptions.
 
@@ -16,8 +16,6 @@ This dataset contains historical one-minute OHLC data for XAUUSD, downloaded fro
 - Storage style: one CSV file per calendar month.
 
 ## Dataset Structure
-
-The package is organized from the dataset root as follows:
 
 ```text
 dataset root
@@ -43,20 +41,16 @@ bid m1 download log: download_bid_m1_log.csv
 
 | Side | Files | Size MB | First file | Last file | First timestamp UTC | Last timestamp UTC |
 |---|---:|---:|---|---|---|---|
-| ask | 198 | 410.58 | `xauusd_ask_m1_2010_01.csv` | `xauusd_ask_m1_2026_06.csv` | 2010-01-01 00:00:00 UTC | 2026-06-23 16:59:00 UTC |
-| bid | 198 | 410.65 | `xauusd_bid_m1_2010_01.csv` | `xauusd_bid_m1_2026_06.csv` | 2010-01-01 00:00:00 UTC | 2026-06-23 17:59:00 UTC |
+| ask | 200 | 413.71 | `xauusd_ask_m1_2010_01.csv` | `xauusd_ask_m1_2026_08.csv` | 2010-01-01 00:00:00 UTC | 2026-08-20 23:58:00 UTC |
+| bid | 200 | 413.77 | `xauusd_bid_m1_2010_01.csv` | `xauusd_bid_m1_2026_08.csv` | 2010-01-01 00:00:00 UTC | 2026-08-20 23:58:00 UTC |
 
-The final month file, `2026_06`, is a partial current-month file because the download was run on 2026-06-24.
+The latest month file, `2026_08`, is partial. The latest data currently available in the downloaded files ends at about `2026-08-20 23:58:00 UTC`. Re-download `2026_08` when more recent data is needed.
 
 ## CSV Schema
-
-Every monthly CSV has this header:
 
 ```csv
 timestamp,open,high,low,close
 ```
-
-Column meaning:
 
 - `timestamp`: Unix epoch time in milliseconds. Example: `1262304000000` means `2010-01-01 00:00:00 UTC`.
 - `open`: first price of the one-minute candle.
@@ -64,27 +58,9 @@ Column meaning:
 - `low`: lowest price within the minute.
 - `close`: last price of the one-minute candle.
 
-Example from bid:
-
-```csv
-timestamp,open,high,low,close
-1262304000000,1096.093,1096.093,1096.093,1096.093
-```
-
-Example from ask:
-
-```csv
-timestamp,open,high,low,close
-1262304000000,1096.597,1096.597,1096.597,1096.597
-```
-
 ## How To Interpret Bid And Ask
 
-Use `bid` when modelling sell-side execution or prices that can be sold into.
-
-Use `ask` when modelling buy-side execution or prices that must be paid to buy.
-
-The spread at a timestamp can be estimated as:
+Use `bid` when modelling sell-side execution or prices that can be sold into. Use `ask` when modelling buy-side execution or prices that must be paid to buy.
 
 ```text
 spread = ask.close - bid.close
@@ -97,189 +73,37 @@ A conservative backtest convention is:
 - Short entry: use bid.
 - Short exit: use ask.
 
-Using only one price stream or only a mid price can overstate performance because it ignores spread cost.
-
 ## Suggested Strategy Validation Workflow
 
-Do not start by running the entire 2010-to-present dataset. The full dataset is large, and early strategy iterations are easier to debug on a smaller but recent sample.
+For early validation, start with data from `2024-01` to the latest available month. Do not start by running the entire 2010-to-present dataset because early strategy iterations are easier to debug on a smaller but recent sample.
 
-For early validation, start with data from `2024-01` to the latest available month:
-
-```text
-ask files from xauusd_ask_m1_2024_01.csv onward
-bid files from xauusd_bid_m1_2024_01.csv onward
-```
-
-Early validation goals:
-
-1. Confirm that the data can be read and merged correctly.
-2. Confirm timestamp parsing and time-zone handling.
-3. Confirm entry and exit direction logic.
-4. Confirm acceptable backtest speed.
-5. Check basic strategy behavior in a recent market environment.
-
-After strategy logic, parameter ranges, execution-cost handling, and risk rules are stable, move to full historical validation.
-
-## Later-Stage Full Data Validation
-
-For later-stage validation, use the full `2010-01` to latest available bid/ask dataset.
-
-Recommended process:
-
-1. Concatenate all ask monthly files in filename order.
-2. Concatenate all bid monthly files in filename order.
-3. Convert `timestamp` to UTC datetime.
-4. Merge ask and bid on `timestamp`.
-5. Check for missing ask or bid timestamps after merging.
-6. Apply execution prices according to trade direction.
-7. Evaluate results by year, month, market regime, and volatility environment.
-
-At minimum, review:
-
-- Yearly performance.
-- Monthly performance.
-- Maximum drawdown.
-- Win rate and payoff ratio.
-- Number of trades.
-- Average holding time.
-- Spread impact on performance.
-- Differences between high-volatility and low-volatility periods.
-
-## Dynamic Risk And Capacity Model
-
-The current trading strategy uses a dynamic risk and capacity framework to convert win rate, annual trade count, stop-loss distribution, broker friction, and position-size limits into one comparable growth-quality standard.
-
-This model should be used after the signal logic is stable enough to estimate:
-
-- `p`: strategy win rate. Example: `0.60` means 60%.
-- `N`: target number of trades per year. Example: `6000`.
-- `r`: risk per trade as a fraction of current equity. Example: `0.02` means 2%.
-- `R`: theoretical payoff ratio in R-multiple terms. Example: `1.0` means 1R.
-- `mu_M`: average stop-loss distance in pips. Current baseline example: `361.5`.
-- `sigma_M`: standard deviation of stop-loss distance in pips.
-- `C`: round-turn commission converted to pips. Baseline institutional friction example: `0.7`.
-
-### Stochastic Commission Drag
-
-Because commission drag is inversely related to stop-loss distance, small or unstable stop distances create nonlinear friction. Treat stop-loss distance `M` as a random variable and use a second-order approximation:
-
-```text
-f_bar = (C / mu_M) * (1 + (sigma_M^2 / mu_M^2))
-```
-
-Interpretation:
-
-- Higher `sigma_M` increases effective commission drag even when average stop distance is unchanged.
-- Smaller `mu_M` increases friction sharply because the fixed commission becomes large relative to the stop.
-- Backtests should estimate `mu_M` and `sigma_M` from actual generated trades, not from manually selected examples.
-
-### Equivalent Growth Standard
-
-The strategy is evaluated against a target annual geometric-growth constant:
-
-```text
-N * [ p * alpha - beta ] = K
-```
-
-Where:
-
-```text
-alpha = r * R * (1 - f_bar) + r * (1 + f_bar) - ((r^2 * R^2) / 2) * (1 - f_bar)^2 + ((r^2) / 2) * (1 + f_bar)^2
-
-beta = r * (1 + f_bar) + ((r^2) / 2) * (1 + f_bar)^2
-```
-
-`K` is the annual system growth-energy constant. In the current specification, the baseline can be locked from a reference setup such as:
-
-```text
-p = 0.60
-N = 6000
-mu_M = 361.5
-```
-
-When testing a new parameter set, calculate:
-
-```text
-current_K = new_N * (new_p * alpha - beta)
-```
-
-If `current_K >= target_K`, the adjusted combination of win rate, trade count, stop-loss behavior, and cost drag meets or exceeds the original strategy standard.
-
-### Implementation Sequence
-
-1. Backtest the strategy with bid/ask execution rules and collect every realized stop-loss distance `M`.
-2. Calculate `mu_M` and `sigma_M` from the trade sample.
-3. Convert broker round-turn commission to `C` in pips.
-4. Calculate `f_bar`.
-5. Calculate `alpha` and `beta`.
-6. Compare `current_K` with the locked baseline `target_K`.
-7. Report the resulting win rate `p`, annualized trade count `N`, average stop distance, stop-distance standard deviation, and pass/fail status.
-
-### Risk Boundaries
-
-- Volatility expansion: if `sigma_M` rises sharply, recalibrate `f_bar`, `alpha`, `beta`, and `current_K`. Higher stop-distance instability reduces the strategy's effective capacity and may require higher win rate, lower trade frequency, lower risk per trade, or stricter filters.
-- Micro-stop trap: if `mu_M` becomes too small relative to `C`, transaction cost can dominate the edge. Use a hard filter such as `mu_M > 20 * C` before accepting a parameter set.
-- Broker capacity ceiling: this geometric compounding model is valid only while position size can scale. If account equity reaches the broker's per-trade maximum, such as 100 standard lots, switch execution to fixed-lot sizing and stop using geometric compounding assumptions for future growth estimates.
+After strategy logic, parameter ranges, execution-cost handling, and risk rules are stable, move to full historical validation from `2010-01` onward.
 
 ## Later-Stage Bid/Ask Execution Modelling
 
-For later-stage validation, avoid idealized close-price-only backtests. Use bid/ask to model transaction cost more realistically.
-
-### Long Trades
-
-Long entry means buying, so use ask:
+Long trades:
 
 ```text
 long_entry_price = ask price
-```
-
-Long exit means selling, so use bid:
-
-```text
 long_exit_price = bid price
-```
-
-Simplified long PnL:
-
-```text
 pnl = bid_exit - ask_entry
 ```
 
-### Short Trades
-
-Short entry means selling, so use bid:
+Short trades:
 
 ```text
 short_entry_price = bid price
-```
-
-Short exit means buying back, so use ask:
-
-```text
 short_exit_price = ask price
-```
-
-Simplified short PnL:
-
-```text
 pnl = bid_entry - ask_exit
 ```
 
-### Which OHLC Field To Use
-
 If a signal is generated after a candle closes, a more conservative assumption is to execute on the next candle's open instead of the same candle's close.
-
-Example:
-
-- Candle N close generates a long signal.
-- Candle N+1 uses ask open for entry.
-- Exit uses bid open or bid close, depending on the backtest assumption.
 
 For stop-loss or take-profit logic, use high/low to check whether a level was touched within the minute. A one-minute OHLC candle does not reveal intraminute price order. If both stop-loss and take-profit are touched in the same candle, use a conservative assumption or validate with finer-grained data.
 
 ## Completeness Checks
 
-For complete historical months, expected line count is:
+For complete calendar-minute coverage, expected line count is:
 
 ```text
 expected_lines = days_in_month * 1440 + 1
@@ -287,38 +111,14 @@ expected_lines = days_in_month * 1440 + 1
 
 The `+ 1` is the CSV header row.
 
-Expected examples:
-
-| Month length | Expected lines |
-|---:|---:|
-| 28 days | 40321 |
-| 29 days | 41761 |
-| 30 days | 43201 |
-| 31 days | 44641 |
-
-The downloader sometimes returned success while producing a 0-byte or partial file. Because of that, downloads must be validated by line count, not only by process exit code.
+Some recent files may contain market-session rows only, meaning non-trading minutes are not present. This can make their line count lower than the full calendar-minute formula even when the first and last timestamps cover the available trading sessions. Always check the audit CSV files before using the dataset.
 
 Current validation result:
 
-- Ask: checked and repaired. No full historical month is missing or partial.
-- Bid: checked and repaired. No full historical month is missing or partial.
-- `2026_06` is intentionally partial because it is the current month at download time.
-
-## Re-download Command Pattern
-
-Ask month:
-
-```powershell
-npx dukascopy-node -i xauusd -from 2010-01-01 -to 2010-02-01 -t m1 -p ask -f csv --cache -dir <ask-m1-folder> -fn xauusd_ask_m1_2010_01 -r 5 -rp 3000
-```
-
-Bid month:
-
-```powershell
-npx dukascopy-node -i xauusd -from 2010-01-01 -to 2010-02-01 -t m1 -p bid -f csv --cache -dir <bid-m1-folder> -fn xauusd_bid_m1_2010_01 -r 5 -rp 3000
-```
-
-Important: after any re-download, verify file size and expected row count.
+- Ask: checked and repaired for zero-byte and partial-download failures.
+- Bid: checked and repaired for zero-byte and partial-download failures.
+- `2026_08` is intentionally partial because it is the latest in-progress month.
+- When bid/ask are merged for execution modelling, use an inner join on `timestamp`; this excludes any timestamp present on only one side.
 
 ## Python Usage Example
 
@@ -334,16 +134,7 @@ ask_files = sorted((DATASET_ROOT / "xauusd" / "ask" / "m1").glob("xauusd_ask_m1_
 bid = pd.concat((pd.read_csv(f) for f in bid_files), ignore_index=True)
 ask = pd.concat((pd.read_csv(f) for f in ask_files), ignore_index=True)
 
-bid["datetime_utc"] = pd.to_datetime(bid["timestamp"], unit="ms", utc=True)
-ask["datetime_utc"] = pd.to_datetime(ask["timestamp"], unit="ms", utc=True)
-
-merged = bid.merge(
-    ask,
-    on="timestamp",
-    suffixes=("_bid", "_ask"),
-    how="inner",
-)
-
+merged = bid.merge(ask, on="timestamp", suffixes=("_bid", "_ask"), how="inner")
 merged["datetime_utc"] = pd.to_datetime(merged["timestamp"], unit="ms", utc=True)
 merged["spread_close"] = merged["close_ask"] - merged["close_bid"]
 ```
@@ -359,81 +150,6 @@ For early validation from `2024-01` onward, either load files from `2024_*`, `20
 5. Later validation should use the full `2010-01` to latest available data.
 6. Long entry uses ask; long exit uses bid.
 7. Short entry uses bid; short exit uses ask.
-8. Merge bid and ask using `timestamp`.
-9. `2026_06` is a partial current-month file; exclude or refresh it when a complete month is required.
+8. Merge bid and ask using `timestamp` with an inner join.
+9. The latest month may be partial; refresh it when a complete month is required.
 10. Check the audit CSV files before using the dataset.
-11. For capacity evaluation, calculate `p`, annualized `N`, `mu_M`, `sigma_M`, `f_bar`, `alpha`, `beta`, and `current_K` from actual backtest trades.
-12. Accept a new strategy parameter set only when `current_K >= target_K` and the stop-distance and broker-capacity risk boundaries are still satisfied.
-## TradingView Pepperstone Calibration Note
-
-A small TradingView Pepperstone export was compared against this Dukascopy bid/ask dataset to decide which side should be used for early-stage structure and feature analysis.
-
-Compared file:
-
-```text
-F:\code\AutoRunForex\History_Data\tradingview_pepperstone\PEPPERSTONE_XAUUSD, 1_6f14b.csv
-```
-
-TradingView file coverage:
-
-```text
-2023-12-29 11:44 UTC to 2024-01-02 18:59 UTC
-```
-
-Because this file does not include `2024-01-03 02:34 UTC`, calibration was performed on overlapping timestamps.
-
-### Sample OHLC Comparison
-
-| Time UTC | Source | Open | High | Low | Close |
-|---|---|---:|---:|---:|---:|
-| 2024-01-02 00:35 | TradingView Pepperstone | 2063.850 | 2063.910 | 2063.810 | 2063.840 |
-| 2024-01-02 00:35 | Dukascopy BID | 2063.845 | 2063.905 | 2063.785 | 2063.845 |
-| 2024-01-02 00:35 | Dukascopy ASK | 2064.152 | 2064.222 | 2064.122 | 2064.122 |
-| 2024-01-02 05:35 | TradingView Pepperstone | 2071.710 | 2072.120 | 2071.700 | 2071.980 |
-| 2024-01-02 05:35 | Dukascopy BID | 2071.625 | 2072.135 | 2071.625 | 2071.965 |
-| 2024-01-02 05:35 | Dukascopy ASK | 2071.935 | 2072.452 | 2071.935 | 2072.295 |
-| 2024-01-02 09:42 | TradingView Pepperstone | 2078.010 | 2078.080 | 2077.540 | 2077.590 |
-| 2024-01-02 09:42 | Dukascopy BID | 2077.935 | 2077.968 | 2077.438 | 2077.498 |
-| 2024-01-02 09:42 | Dukascopy ASK | 2078.275 | 2078.295 | 2077.775 | 2077.815 |
-
-### Overlap Statistics
-
-Overlap sample size: `1199` one-minute candles.
-
-| Comparison | Mean close difference | Mean absolute close difference |
-|---|---:|---:|
-| TradingView Pepperstone close - Dukascopy BID close | +0.0871 | 0.0883 |
-| TradingView Pepperstone close - Dukascopy ASK close | -0.2392 | 0.2392 |
-
-Closer side count:
-
-```text
-Closer to Dukascopy BID: 1157 candles
-Closer to Dukascopy ASK: 37 candles
-```
-
-### Practical Recommendation
-
-The TradingView Pepperstone XAUUSD 1-minute OHLC export is much closer to Dukascopy BID than to Dukascopy ASK in the tested overlap.
-
-For early-stage analysis intended to match TradingView chart structure more closely, use:
-
-```text
-Signal / BOS / CHoCH / pivot generation: Dukascopy BID candles
-```
-
-For later-stage execution and account-growth validation, still use the conservative bid/ask execution model:
-
-```text
-Long entry: ASK
-Long exit: BID
-Short entry: BID
-Short exit: ASK
-```
-
-Recommended workflow:
-
-```text
-Early feature analysis: use BID to reduce chart-data mismatch.
-Final execution validation: use BID/ASK to include spread cost.
-```
