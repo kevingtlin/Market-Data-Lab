@@ -1,0 +1,34 @@
+datasets:
+  - id: XAUUSD-DUKASCOPY-M1-BID-ASK
+    status: active
+    instrument: XAUUSD
+    asset_class: spot-metal
+    quote_currency: USD
+    provider: Dukascopy
+    source_tool: dukascopy-node
+    base_resolution: m1
+    timezone: UTC
+    timestamp_unit: unix_epoch_milliseconds
+    price_sides:
+      - bid
+      - ask
+    schema:
+      columns:
+        - timestamp
+        - open
+        - high
+        - low
+        - close
+    current_storage:
+      policy: preserve-existing-paths
+      bid_path: xauusd/bid/m1
+      ask_path: xauusd/ask/m1
+    coverage:
+      first_timestamp_utc: "2010-01-01 00:00:00"
+      last_timestamp_utc: "2026-08-20 23:58:00"
+      latest_month_partial: true
+    derived_timeframe_policy: derive-from-m1-when-semantics-match
+    docs:
+      - XAUUSD_DUKASCOPY_M1_BID_ASK_README.md
+      - XAUUSD_DUKASCOPY_M1_BID_ASK_README_ZH.md
+

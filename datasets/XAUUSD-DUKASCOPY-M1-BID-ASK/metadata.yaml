@@ -1,0 +1,37 @@
+id: XAUUSD-DUKASCOPY-M1-BID-ASK
+status: active
+instrument: XAUUSD
+asset_class: spot-metal
+quote_currency: USD
+provider: Dukascopy
+source_tool: dukascopy-node
+base_resolution: m1
+timezone: UTC
+timestamp_unit: unix_epoch_milliseconds
+format: csv
+schema:
+  columns:
+    - timestamp
+    - open
+    - high
+    - low
+    - close
+price_sides:
+  bid:
+    current_path: xauusd/bid/m1
+    audit_log: xauusd/bid/m1/bid_m1_file_audit.csv
+    download_log: xauusd/bid/m1/download_bid_m1_log.csv
+  ask:
+    current_path: xauusd/ask/m1
+    audit_log: xauusd/ask/m1/ask_m1_file_audit.csv
+    download_log: xauusd/ask/m1/download_ask_m1_log.csv
+coverage:
+  first_timestamp_utc: "2010-01-01 00:00:00"
+  last_timestamp_utc: "2026-08-20 23:58:00"
+  latest_month_partial: true
+storage_policy:
+  current: preserve-existing-paths
+  reason: Preserve compatibility with existing Strategy-Backtest-Lab loaders before a dedicated path migration phase.
+derived_timeframe_policy:
+  rule: Coarser timeframes should be derived from M1 when provider, instrument, data semantics, timezone, and schema match.
+
