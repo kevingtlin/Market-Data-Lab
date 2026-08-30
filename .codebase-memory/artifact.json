@@ -1,0 +1,11 @@
+{
+    "schema_version": 2,
+    "commit": "8f6549716d7aacb7ec8568a9b3b9dd4f4edc2797",
+    "indexed_at": "2026-08-30T13:33:09Z",
+    "project": "Market-Data-Lab",
+    "nodes": 909,
+    "edges": 904,
+    "original_size": 2228224,
+    "compressed_size": 76684,
+    "compression_level": 9
+}
