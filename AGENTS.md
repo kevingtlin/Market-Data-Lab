@@ -41,6 +41,15 @@ This preserves compatibility with existing backtest loaders while the repository
 
 Workspace 層級治理、受管 repository registry 與 onboarding 政策由 `Trading-Research-Workspace` Memory Bank 維護。
 
+## 術語保存規則
+
+- 優先沿用使用者或本 repo 已存在的正式名稱，不得為了結構化或專業感任意英文化、翻譯或重新命名。
+- 首次引入使用者尚未使用的新英文專有名詞時，必須同時說明中文意思、當前含義、使用理由與來源。
+- AI 為未命名概念建立的名稱必須標記為「AI 暫稱」；未經使用者確認，不得成為正式術語或穩定資料契約的唯一名稱。
+- 工程 identifier 可以使用英文，但必須保留與正式中文名稱／原始概念的映射；實作改名不等於概念改名。
+- 無法追溯名稱來源或定義時，標記待追溯並搜尋本 repo；不得猜測、合併或拆分概念。
+- 本 repo 必須能獨立執行這些規則，不假設 Trading-Research-Workspace 或私人 Knowledge Lab 存在。第一輪稽核與本地規則見 memory-bank/terminology-governance.md。
+
 ## Hard Rules
 
 - Do not rename repository identity back to a provider/instrument/timeframe-specific name.

@@ -2,6 +2,8 @@
 
 ## Current Work
 
+2026-09-03 已加入 Project-only 可獨立執行的術語保存規則與第一輪稽核；本次未變更資料、路徑或 schema。
+
 Phase 7 used the conservative Market Data approach:
 
 - Added repository-level AGENTS and README.

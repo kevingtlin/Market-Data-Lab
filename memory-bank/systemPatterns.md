@@ -14,3 +14,8 @@ Exceptions require documented evidence, such as different provider, session/cale
 
 Do not alter timestamp units, timezone, bid/ask meaning, or CSV schema during structural refactors.
 
+
+
+## 術語治理
+
+Repository identity、dataset ID、provider／instrument metadata、storage path 與 CSV schema field 必須分離。工程欄位可維持英文，但必須保存中文說明與來源；改名不得改變資料契約。完整本地規則見 memory-bank/terminology-governance.md。
