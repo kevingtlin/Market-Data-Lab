@@ -25,7 +25,7 @@ datasets:
       ask_path: xauusd/ask/m1
     coverage:
       first_timestamp_utc: "2010-01-01 00:00:00"
-      last_timestamp_utc: "2026-08-20 23:58:00"
+      last_timestamp_utc: "2026-10-19 13:59:00"
       latest_month_partial: true
     derived_timeframe_policy: derive-from-m1-when-semantics-match
     docs:

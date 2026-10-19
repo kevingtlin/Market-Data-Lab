@@ -27,7 +27,7 @@ price_sides:
     download_log: xauusd/ask/m1/download_ask_m1_log.csv
 coverage:
   first_timestamp_utc: "2010-01-01 00:00:00"
-  last_timestamp_utc: "2026-08-20 23:58:00"
+  last_timestamp_utc: "2026-10-19 13:59:00"
   latest_month_partial: true
 storage_policy:
   current: preserve-existing-paths

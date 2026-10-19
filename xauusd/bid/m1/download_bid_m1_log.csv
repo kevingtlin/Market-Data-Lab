@@ -210,3 +210,6 @@ xauusd_bid_m1_2026_06,2026-06-01,2026-07-01,ok,0.95,1823951,36480,43201,"F:\code
 xauusd_bid_m1_2026_07,2026-07-01,2026-08-01,ok,0.92,1886898,37740,44641,"F:\code\AutoRunForex\History_Data\dukascopy\xauusd\bid\m1\xauusd_bid_m1_2026_07.csv"
 xauusd_bid_m1_2026_06,2026-06-01,2026-07-01,ok,1.04,1823951,36480,43201,"F:\code\AutoRunForex\History_Data\dukascopy\xauusd\bid\m1\xauusd_bid_m1_2026_06.csv"
 xauusd_bid_m1_2026_07,2026-07-01,2026-08-01,ok,0.96,1886898,37740,44641,"F:\code\AutoRunForex\History_Data\dukascopy\xauusd\bid\m1\xauusd_bid_m1_2026_07.csv"
+"xauusd_bid_m1_2026_08","2026-08-01","2026-09-01","ok","28.04","1688690","33777","44641","xauusd/bid/m1/xauusd_bid_m1_2026_08.csv"
+"xauusd_bid_m1_2026_09","2026-09-01","2026-10-01","ok","22.80","1510129","30209","43201","xauusd/bid/m1/xauusd_bid_m1_2026_09.csv"
+"xauusd_bid_m1_2026_10","2026-10-01","now","ok","219.59","869743","17401","","xauusd/bid/m1/xauusd_bid_m1_2026_10.csv"

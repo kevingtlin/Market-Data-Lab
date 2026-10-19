@@ -1,6 +1,6 @@
 # XAUUSD Dukascopy M1 Bid/Ask History
 
-Generated: 2026-08-23 02:16:39 +08:00
+更新時間：2026-10-19（Asia/Taipei）
 
 This dataset contains historical one-minute OHLC data for XAUUSD, downloaded from Dukascopy via `dukascopy-node`. It includes both bid and ask prices and is intended for strategy research, backtesting, spread analysis, and later-stage validation with more realistic execution assumptions.
 
@@ -39,12 +39,12 @@ bid m1 download log: download_bid_m1_log.csv
 
 ## Current Coverage
 
-| Side | Files | Size MB | First file | Last file | First timestamp UTC | Last timestamp UTC |
+| Side | Files | Size MiB | First file | Last file | First timestamp UTC | Last timestamp UTC |
 |---|---:|---:|---|---|---|---|
-| ask | 200 | 413.71 | `xauusd_ask_m1_2010_01.csv` | `xauusd_ask_m1_2026_08.csv` | 2010-01-01 00:00:00 UTC | 2026-08-20 23:58:00 UTC |
-| bid | 200 | 413.77 | `xauusd_bid_m1_2010_01.csv` | `xauusd_bid_m1_2026_08.csv` | 2010-01-01 00:00:00 UTC | 2026-08-20 23:58:00 UTC |
+| ask | 202 | 424.75 | `xauusd_ask_m1_2010_01.csv` | `xauusd_ask_m1_2026_10.csv` | 2010-01-01 00:00:00 UTC | 2026-10-19 13:59:00 UTC |
+| bid | 202 | 424.81 | `xauusd_bid_m1_2010_01.csv` | `xauusd_bid_m1_2026_10.csv` | 2010-01-01 00:00:00 UTC | 2026-10-19 13:59:00 UTC |
 
-The latest month file, `2026_08`, is partial. The latest data currently available in the downloaded files ends at about `2026-08-20 23:58:00 UTC`. Re-download `2026_08` when more recent data is needed.
+最新月份 `2026_10` 尚未完整；bid／ask 共同最新資料為 `2026-10-19 13:59:00 UTC`。本次使用 `dukascopy-node@1.46.4`；詳見 `reports/data-update-2026-10-19.md`。
 
 ## CSV Schema
 
@@ -117,7 +117,7 @@ Current validation result:
 
 - Ask: checked and repaired for zero-byte and partial-download failures.
 - Bid: checked and repaired for zero-byte and partial-download failures.
-- `2026_08` is intentionally partial because it is the latest in-progress month.
+- `2026_10` 是最新未完整月份；8、9 月已重下載／補齊。
 - When bid/ask are merged for execution modelling, use an inner join on `timestamp`; this excludes any timestamp present on only one side.
 
 ## Python Usage Example

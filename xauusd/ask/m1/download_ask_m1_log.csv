@@ -204,3 +204,6 @@ xauusd_ask_m1_2026_06,2026-06-01,2026-07-01,ok,1,1823944,36480,43201,"F:\code\Au
 xauusd_ask_m1_2026_07,2026-07-01,2026-08-01,ok,0.96,1886953,37740,44641,"F:\code\AutoRunForex\History_Data\dukascopy\xauusd\ask\m1\xauusd_ask_m1_2026_07.csv"
 xauusd_ask_m1_2026_06,2026-06-01,2026-07-01,ok,0.98,1823944,36480,43201,"F:\code\AutoRunForex\History_Data\dukascopy\xauusd\ask\m1\xauusd_ask_m1_2026_06.csv"
 xauusd_ask_m1_2026_07,2026-07-01,2026-08-01,ok,1.03,1886953,37740,44641,"F:\code\AutoRunForex\History_Data\dukascopy\xauusd\ask\m1\xauusd_ask_m1_2026_07.csv"
+"xauusd_ask_m1_2026_08","2026-08-01","2026-09-01","ok","26.64","1688832","xauusd/ask/m1/xauusd_ask_m1_2026_08.csv"
+"xauusd_ask_m1_2026_09","2026-09-01","2026-10-01","ok","23.81","1510227","xauusd/ask/m1/xauusd_ask_m1_2026_09.csv"
+"xauusd_ask_m1_2026_10","2026-10-01","now","ok","241.79","869814","xauusd/ask/m1/xauusd_ask_m1_2026_10.csv"

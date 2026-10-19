@@ -1,0 +1,2179 @@
+{
+  "validated_at": "2026-10-19T14:15:18.303Z",
+  "tool": "dukascopy-node@1.46.4",
+  "files": [
+    {
+      "name": "xauusd_bid_m1_2026_08.csv",
+      "side": "bid",
+      "month": "2026_08",
+      "bytes": 1688690,
+      "rows": 33776,
+      "first_utc": "2026-08-02 00:00:00",
+      "last_utc": "2026-08-31 23:59:00",
+      "gap_count": 13,
+      "max_gap_minutes": 2941,
+      "sha256": "c30aaf883329b0989c0dd0f5f3fb484be8edd9b222b5c5b8f0e84d97234005ee",
+      "daily_rows": {
+        "2026-08-02": 1440,
+        "2026-08-03": 1440,
+        "2026-08-04": 1440,
+        "2026-08-05": 1440,
+        "2026-08-06": 1440,
+        "2026-08-07": 1260,
+        "2026-08-09": 1440,
+        "2026-08-10": 1440,
+        "2026-08-11": 1440,
+        "2026-08-12": 1440,
+        "2026-08-13": 1440,
+        "2026-08-14": 1260,
+        "2026-08-16": 1439,
+        "2026-08-17": 1439,
+        "2026-08-18": 1439,
+        "2026-08-19": 1439,
+        "2026-08-20": 1440,
+        "2026-08-21": 1260,
+        "2026-08-23": 120,
+        "2026-08-24": 1380,
+        "2026-08-25": 1380,
+        "2026-08-26": 1380,
+        "2026-08-27": 1380,
+        "2026-08-28": 1260,
+        "2026-08-30": 120,
+        "2026-08-31": 1380
+      },
+      "download": {
+        "name": "xauusd_bid_m1_2026_08",
+        "from": "2026-08-01",
+        "to": "2026-09-01",
+        "started_utc": "2026-10-19T14:00:15.1549487Z",
+        "finished_utc": "2026-10-19T14:00:43.1968005Z",
+        "exit_code": 0,
+        "version": "1.46.4"
+      },
+      "daily_responses": [
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/02/BID_candles_min_1.bi5",
+          "bytes": "3.19 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/01/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/03/BID_candles_min_1.bi5",
+          "bytes": "15.74 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/05/BID_candles_min_1.bi5",
+          "bytes": "16.43 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/04/BID_candles_min_1.bi5",
+          "bytes": "16.23 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/06/BID_candles_min_1.bi5",
+          "bytes": "16.28 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/08/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/07/BID_candles_min_1.bi5",
+          "bytes": "15.19 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/09/BID_candles_min_1.bi5",
+          "bytes": "3.22 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/10/BID_candles_min_1.bi5",
+          "bytes": "15.86 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/11/BID_candles_min_1.bi5",
+          "bytes": "16.29 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/12/BID_candles_min_1.bi5",
+          "bytes": "16.06 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/13/BID_candles_min_1.bi5",
+          "bytes": "16.18 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/15/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/14/BID_candles_min_1.bi5",
+          "bytes": "14.75 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/16/BID_candles_min_1.bi5",
+          "bytes": "3.13 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/17/BID_candles_min_1.bi5",
+          "bytes": "15.85 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/18/BID_candles_min_1.bi5",
+          "bytes": "15.95 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/21/BID_candles_min_1.bi5",
+          "bytes": "15.23 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/19/BID_candles_min_1.bi5",
+          "bytes": "16.15 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/20/BID_candles_min_1.bi5",
+          "bytes": "16.29 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/23/BID_candles_min_1.bi5",
+          "bytes": "3.21 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/22/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/24/BID_candles_min_1.bi5",
+          "bytes": "16.66 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/27/BID_candles_min_1.bi5",
+          "bytes": "16.23 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/25/BID_candles_min_1.bi5",
+          "bytes": "16.47 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/26/BID_candles_min_1.bi5",
+          "bytes": "16.09 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/29/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/30/BID_candles_min_1.bi5",
+          "bytes": "3.27 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/28/BID_candles_min_1.bi5",
+          "bytes": "15.38 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/31/BID_candles_min_1.bi5",
+          "bytes": "16.13 KB",
+          "source": "network"
+        }
+      ],
+      "normalization": {
+        "preserved_previous_rows": 24115,
+        "added_rows": 9661,
+        "raw_rows": 44640,
+        "ignored_zero_volume_rows": 6180,
+        "ignored_incomplete_minutes": 0,
+        "source_changed_flat_rows_preserved": 3960,
+        "source_changed_trading_rows": 0
+      },
+      "previous": {
+        "sha256": "5406b3e12318f7ec10ffe27eead81dc6eeaa7f5125721a5ddd040f55150a1ead",
+        "rows": 24115,
+        "missing_timestamps": 0,
+        "changed_ohlc": 0,
+        "added_rows": 9661
+      }
+    },
+    {
+      "name": "xauusd_ask_m1_2026_08.csv",
+      "side": "ask",
+      "month": "2026_08",
+      "bytes": 1688832,
+      "rows": 33777,
+      "first_utc": "2026-08-02 00:00:00",
+      "last_utc": "2026-08-31 23:59:00",
+      "gap_count": 12,
+      "max_gap_minutes": 2941,
+      "sha256": "a1fe57ffa6c9451a5e42ba5347b4ce4e268eb127f0502602815aa3d83ab30459",
+      "daily_rows": {
+        "2026-08-02": 1440,
+        "2026-08-03": 1440,
+        "2026-08-04": 1440,
+        "2026-08-05": 1440,
+        "2026-08-06": 1440,
+        "2026-08-07": 1260,
+        "2026-08-09": 1440,
+        "2026-08-10": 1440,
+        "2026-08-11": 1440,
+        "2026-08-12": 1440,
+        "2026-08-13": 1440,
+        "2026-08-14": 1260,
+        "2026-08-16": 1440,
+        "2026-08-17": 1439,
+        "2026-08-18": 1439,
+        "2026-08-19": 1439,
+        "2026-08-20": 1440,
+        "2026-08-21": 1260,
+        "2026-08-23": 120,
+        "2026-08-24": 1380,
+        "2026-08-25": 1380,
+        "2026-08-26": 1380,
+        "2026-08-27": 1380,
+        "2026-08-28": 1260,
+        "2026-08-30": 120,
+        "2026-08-31": 1380
+      },
+      "download": {
+        "name": "xauusd_ask_m1_2026_08",
+        "from": "2026-08-01",
+        "to": "2026-09-01",
+        "started_utc": "2026-10-19T14:00:43.2105582Z",
+        "finished_utc": "2026-10-19T14:01:09.8534005Z",
+        "exit_code": 0,
+        "version": "1.46.4"
+      },
+      "daily_responses": [
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/03/ASK_candles_min_1.bi5",
+          "bytes": "15.76 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/01/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/02/ASK_candles_min_1.bi5",
+          "bytes": "3.18 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/04/ASK_candles_min_1.bi5",
+          "bytes": "15.82 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/06/ASK_candles_min_1.bi5",
+          "bytes": "16.25 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/05/ASK_candles_min_1.bi5",
+          "bytes": "16.42 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/07/ASK_candles_min_1.bi5",
+          "bytes": "15.31 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/09/ASK_candles_min_1.bi5",
+          "bytes": "3.19 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/08/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/12/ASK_candles_min_1.bi5",
+          "bytes": "16.06 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/10/ASK_candles_min_1.bi5",
+          "bytes": "15.99 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/11/ASK_candles_min_1.bi5",
+          "bytes": "15.95 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/15/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/13/ASK_candles_min_1.bi5",
+          "bytes": "16.24 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/14/ASK_candles_min_1.bi5",
+          "bytes": "14.68 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/16/ASK_candles_min_1.bi5",
+          "bytes": "3.14 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/18/ASK_candles_min_1.bi5",
+          "bytes": "15.8 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/17/ASK_candles_min_1.bi5",
+          "bytes": "15.74 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/21/ASK_candles_min_1.bi5",
+          "bytes": "15.15 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/19/ASK_candles_min_1.bi5",
+          "bytes": "16.29 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/20/ASK_candles_min_1.bi5",
+          "bytes": "16.36 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/22/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/23/ASK_candles_min_1.bi5",
+          "bytes": "3.21 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/24/ASK_candles_min_1.bi5",
+          "bytes": "16.52 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/27/ASK_candles_min_1.bi5",
+          "bytes": "16.23 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/25/ASK_candles_min_1.bi5",
+          "bytes": "16.59 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/26/ASK_candles_min_1.bi5",
+          "bytes": "16.05 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/30/ASK_candles_min_1.bi5",
+          "bytes": "3.26 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/29/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/28/ASK_candles_min_1.bi5",
+          "bytes": "15.28 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/07/31/ASK_candles_min_1.bi5",
+          "bytes": "16.22 KB",
+          "source": "network"
+        }
+      ],
+      "normalization": {
+        "preserved_previous_rows": 24116,
+        "added_rows": 9661,
+        "raw_rows": 44640,
+        "ignored_zero_volume_rows": 6180,
+        "ignored_incomplete_minutes": 0,
+        "source_changed_flat_rows_preserved": 3960,
+        "source_changed_trading_rows": 0
+      },
+      "previous": {
+        "sha256": "7c61e79ae185df149e7da914e53dd4d107c5da72d5559a07914ac35a5e622fb6",
+        "rows": 24116,
+        "missing_timestamps": 0,
+        "changed_ohlc": 0,
+        "added_rows": 9661
+      }
+    },
+    {
+      "name": "xauusd_bid_m1_2026_09.csv",
+      "side": "bid",
+      "month": "2026_09",
+      "bytes": 1510129,
+      "rows": 30208,
+      "first_utc": "2026-09-01 00:00:00",
+      "last_utc": "2026-09-30 23:59:00",
+      "gap_count": 23,
+      "max_gap_minutes": 2941,
+      "sha256": "09cc828da25ee817719c3fb5b3be22058f62d6f7b991ca00f7102a381953e325",
+      "daily_rows": {
+        "2026-09-01": 1380,
+        "2026-09-02": 1380,
+        "2026-09-03": 1380,
+        "2026-09-04": 1260,
+        "2026-09-06": 120,
+        "2026-09-07": 1229,
+        "2026-09-08": 1380,
+        "2026-09-09": 1380,
+        "2026-09-10": 1380,
+        "2026-09-11": 1260,
+        "2026-09-13": 120,
+        "2026-09-14": 1380,
+        "2026-09-15": 1380,
+        "2026-09-16": 1380,
+        "2026-09-17": 1380,
+        "2026-09-18": 1260,
+        "2026-09-20": 120,
+        "2026-09-21": 1380,
+        "2026-09-22": 1380,
+        "2026-09-23": 1380,
+        "2026-09-24": 1380,
+        "2026-09-25": 1260,
+        "2026-09-27": 120,
+        "2026-09-28": 1380,
+        "2026-09-29": 1380,
+        "2026-09-30": 1379
+      },
+      "download": {
+        "name": "xauusd_bid_m1_2026_09",
+        "from": "2026-09-01",
+        "to": "2026-10-01",
+        "started_utc": "2026-10-19T14:01:09.8566368Z",
+        "finished_utc": "2026-10-19T14:01:32.6543336Z",
+        "exit_code": 0,
+        "version": "1.46.4"
+      },
+      "daily_responses": [
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/01/BID_candles_min_1.bi5",
+          "bytes": "16.7 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/02/BID_candles_min_1.bi5",
+          "bytes": "16.19 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/03/BID_candles_min_1.bi5",
+          "bytes": "16.32 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/05/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/04/BID_candles_min_1.bi5",
+          "bytes": "14.88 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/06/BID_candles_min_1.bi5",
+          "bytes": "3.14 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/07/BID_candles_min_1.bi5",
+          "bytes": "14.21 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/08/BID_candles_min_1.bi5",
+          "bytes": "16.19 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/09/BID_candles_min_1.bi5",
+          "bytes": "16.53 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/10/BID_candles_min_1.bi5",
+          "bytes": "16.95 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/12/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/11/BID_candles_min_1.bi5",
+          "bytes": "15.75 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/13/BID_candles_min_1.bi5",
+          "bytes": "3.22 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/14/BID_candles_min_1.bi5",
+          "bytes": "16.86 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/15/BID_candles_min_1.bi5",
+          "bytes": "16.63 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/16/BID_candles_min_1.bi5",
+          "bytes": "16.4 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/17/BID_candles_min_1.bi5",
+          "bytes": "16.39 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/18/BID_candles_min_1.bi5",
+          "bytes": "14.99 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/19/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/20/BID_candles_min_1.bi5",
+          "bytes": "3.14 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/21/BID_candles_min_1.bi5",
+          "bytes": "15.95 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/22/BID_candles_min_1.bi5",
+          "bytes": "16.45 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/23/BID_candles_min_1.bi5",
+          "bytes": "16.06 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/24/BID_candles_min_1.bi5",
+          "bytes": "16.23 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/26/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/25/BID_candles_min_1.bi5",
+          "bytes": "15.01 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/27/BID_candles_min_1.bi5",
+          "bytes": "3.22 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/28/BID_candles_min_1.bi5",
+          "bytes": "16.67 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/29/BID_candles_min_1.bi5",
+          "bytes": "16.27 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/30/BID_candles_min_1.bi5",
+          "bytes": "16.35 KB",
+          "source": "network"
+        }
+      ],
+      "normalization": {
+        "preserved_previous_rows": 0,
+        "added_rows": 30208,
+        "raw_rows": 43200,
+        "ignored_zero_volume_rows": 12992,
+        "ignored_incomplete_minutes": 0,
+        "source_changed_flat_rows_preserved": 0,
+        "source_changed_trading_rows": 0
+      }
+    },
+    {
+      "name": "xauusd_ask_m1_2026_09.csv",
+      "side": "ask",
+      "month": "2026_09",
+      "bytes": 1510227,
+      "rows": 30208,
+      "first_utc": "2026-09-01 00:00:00",
+      "last_utc": "2026-09-30 23:59:00",
+      "gap_count": 23,
+      "max_gap_minutes": 2941,
+      "sha256": "697c9079a8ed80eb2716604f27900e4352206db0a62847510530efdcfaf3645d",
+      "daily_rows": {
+        "2026-09-01": 1380,
+        "2026-09-02": 1380,
+        "2026-09-03": 1380,
+        "2026-09-04": 1260,
+        "2026-09-06": 120,
+        "2026-09-07": 1229,
+        "2026-09-08": 1380,
+        "2026-09-09": 1380,
+        "2026-09-10": 1380,
+        "2026-09-11": 1260,
+        "2026-09-13": 120,
+        "2026-09-14": 1380,
+        "2026-09-15": 1380,
+        "2026-09-16": 1380,
+        "2026-09-17": 1380,
+        "2026-09-18": 1260,
+        "2026-09-20": 120,
+        "2026-09-21": 1380,
+        "2026-09-22": 1380,
+        "2026-09-23": 1380,
+        "2026-09-24": 1380,
+        "2026-09-25": 1260,
+        "2026-09-27": 120,
+        "2026-09-28": 1380,
+        "2026-09-29": 1380,
+        "2026-09-30": 1379
+      },
+      "download": {
+        "name": "xauusd_ask_m1_2026_09",
+        "from": "2026-09-01",
+        "to": "2026-10-01",
+        "started_utc": "2026-10-19T14:01:32.6566337Z",
+        "finished_utc": "2026-10-19T14:01:56.4699385Z",
+        "exit_code": 0,
+        "version": "1.46.4"
+      },
+      "daily_responses": [
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/01/ASK_candles_min_1.bi5",
+          "bytes": "16.51 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/03/ASK_candles_min_1.bi5",
+          "bytes": "16.3 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/02/ASK_candles_min_1.bi5",
+          "bytes": "16.16 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/05/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/04/ASK_candles_min_1.bi5",
+          "bytes": "14.93 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/06/ASK_candles_min_1.bi5",
+          "bytes": "3.15 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/07/ASK_candles_min_1.bi5",
+          "bytes": "14.11 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/09/ASK_candles_min_1.bi5",
+          "bytes": "16.57 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/08/ASK_candles_min_1.bi5",
+          "bytes": "16.14 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/10/ASK_candles_min_1.bi5",
+          "bytes": "16.85 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/11/ASK_candles_min_1.bi5",
+          "bytes": "15.87 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/12/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/13/ASK_candles_min_1.bi5",
+          "bytes": "3.3 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/14/ASK_candles_min_1.bi5",
+          "bytes": "17.04 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/15/ASK_candles_min_1.bi5",
+          "bytes": "16.71 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/16/ASK_candles_min_1.bi5",
+          "bytes": "16.32 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/18/ASK_candles_min_1.bi5",
+          "bytes": "15.12 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/17/ASK_candles_min_1.bi5",
+          "bytes": "16.39 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/19/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/20/ASK_candles_min_1.bi5",
+          "bytes": "3.12 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/21/ASK_candles_min_1.bi5",
+          "bytes": "15.85 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/22/ASK_candles_min_1.bi5",
+          "bytes": "16.29 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/24/ASK_candles_min_1.bi5",
+          "bytes": "16.42 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/23/ASK_candles_min_1.bi5",
+          "bytes": "16.07 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/25/ASK_candles_min_1.bi5",
+          "bytes": "15.33 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/27/ASK_candles_min_1.bi5",
+          "bytes": "3.2 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/26/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/28/ASK_candles_min_1.bi5",
+          "bytes": "16.63 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/29/ASK_candles_min_1.bi5",
+          "bytes": "16.06 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/08/30/ASK_candles_min_1.bi5",
+          "bytes": "16.1 KB",
+          "source": "network"
+        }
+      ],
+      "normalization": {
+        "preserved_previous_rows": 0,
+        "added_rows": 30208,
+        "raw_rows": 43200,
+        "ignored_zero_volume_rows": 12992,
+        "ignored_incomplete_minutes": 0,
+        "source_changed_flat_rows_preserved": 0,
+        "source_changed_trading_rows": 0
+      }
+    },
+    {
+      "name": "xauusd_bid_m1_2026_10.csv",
+      "side": "bid",
+      "month": "2026_10",
+      "bytes": 869743,
+      "rows": 17400,
+      "first_utc": "2026-10-01 00:00:00",
+      "last_utc": "2026-10-19 13:59:00",
+      "gap_count": 12,
+      "max_gap_minutes": 2941,
+      "sha256": "05cdf7ebea1932a6a4748ed47ad74fe2de0023bb11f9b835c38bba424358dd7d",
+      "daily_rows": {
+        "2026-10-01": 1380,
+        "2026-10-02": 1260,
+        "2026-10-04": 120,
+        "2026-10-05": 1380,
+        "2026-10-06": 1380,
+        "2026-10-07": 1380,
+        "2026-10-08": 1380,
+        "2026-10-09": 1260,
+        "2026-10-11": 120,
+        "2026-10-12": 1380,
+        "2026-10-13": 1380,
+        "2026-10-14": 1380,
+        "2026-10-15": 1380,
+        "2026-10-16": 1260,
+        "2026-10-18": 120,
+        "2026-10-19": 840
+      },
+      "download": {
+        "name": "xauusd_bid_m1_2026_10",
+        "from": "2026-10-01",
+        "to": "now",
+        "started_utc": "2026-10-19T14:05:41.5708092Z",
+        "finished_utc": "2026-10-19T14:09:21.1636070Z",
+        "exit_code": 0,
+        "version": "1.46.4"
+      },
+      "daily_responses": [
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/01/BID_candles_min_1.bi5",
+          "bytes": "16.6 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/02/BID_candles_min_1.bi5",
+          "bytes": "15.24 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/03/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/04/BID_candles_min_1.bi5",
+          "bytes": "3.16 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/05/BID_candles_min_1.bi5",
+          "bytes": "15.75 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/06/BID_candles_min_1.bi5",
+          "bytes": "15.58 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/07/BID_candles_min_1.bi5",
+          "bytes": "15.98 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/08/BID_candles_min_1.bi5",
+          "bytes": "15.81 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/09/BID_candles_min_1.bi5",
+          "bytes": "14.54 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/10/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/11/BID_candles_min_1.bi5",
+          "bytes": "3.16 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/12/BID_candles_min_1.bi5",
+          "bytes": "15.3 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/13/BID_candles_min_1.bi5",
+          "bytes": "15.88 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/14/BID_candles_min_1.bi5",
+          "bytes": "16.77 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/15/BID_candles_min_1.bi5",
+          "bytes": "16.4 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/16/BID_candles_min_1.bi5",
+          "bytes": "15.38 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/17/BID_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/18/BID_candles_min_1.bi5",
+          "bytes": "3.21 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/00h_ticks.bi5",
+          "bytes": "57.45 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/01h_ticks.bi5",
+          "bytes": "89.06 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/02h_ticks.bi5",
+          "bytes": "79.74 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/03h_ticks.bi5",
+          "bytes": "54.42 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/04h_ticks.bi5",
+          "bytes": "53.75 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/05h_ticks.bi5",
+          "bytes": "69.69 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/06h_ticks.bi5",
+          "bytes": "70.48 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/07h_ticks.bi5",
+          "bytes": "76.36 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/08h_ticks.bi5",
+          "bytes": "70.13 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/09h_ticks.bi5",
+          "bytes": "64.21 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/10h_ticks.bi5",
+          "bytes": "74.74 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/11h_ticks.bi5",
+          "bytes": "71.78 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/12h_ticks.bi5",
+          "bytes": "95.75 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/13h_ticks.bi5",
+          "bytes": "128.45 KB",
+          "source": "network"
+        }
+      ],
+      "normalization": {
+        "preserved_previous_rows": 0,
+        "added_rows": 17400,
+        "raw_rows": 26760,
+        "ignored_zero_volume_rows": 9360,
+        "ignored_incomplete_minutes": 0,
+        "source_changed_flat_rows_preserved": 0,
+        "source_changed_trading_rows": 0
+      }
+    },
+    {
+      "name": "xauusd_ask_m1_2026_10.csv",
+      "side": "ask",
+      "month": "2026_10",
+      "bytes": 869814,
+      "rows": 17400,
+      "first_utc": "2026-10-01 00:00:00",
+      "last_utc": "2026-10-19 13:59:00",
+      "gap_count": 12,
+      "max_gap_minutes": 2941,
+      "sha256": "43d37686754e87fd343d14012832fd476b47551d390a15520fb62963f2ff74c0",
+      "daily_rows": {
+        "2026-10-01": 1380,
+        "2026-10-02": 1260,
+        "2026-10-04": 120,
+        "2026-10-05": 1380,
+        "2026-10-06": 1380,
+        "2026-10-07": 1380,
+        "2026-10-08": 1380,
+        "2026-10-09": 1260,
+        "2026-10-11": 120,
+        "2026-10-12": 1380,
+        "2026-10-13": 1380,
+        "2026-10-14": 1380,
+        "2026-10-15": 1380,
+        "2026-10-16": 1260,
+        "2026-10-18": 120,
+        "2026-10-19": 840
+      },
+      "download": {
+        "name": "xauusd_ask_m1_2026_10",
+        "from": "2026-10-01",
+        "to": "now",
+        "started_utc": "2026-10-19T14:11:09.8940323Z",
+        "finished_utc": "2026-10-19T14:15:11.6822030Z",
+        "exit_code": 0,
+        "version": "1.46.4"
+      },
+      "daily_responses": [
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/01/ASK_candles_min_1.bi5",
+          "bytes": "16.15 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/02/ASK_candles_min_1.bi5",
+          "bytes": "15.2 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/03/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/04/ASK_candles_min_1.bi5",
+          "bytes": "3.16 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/05/ASK_candles_min_1.bi5",
+          "bytes": "15.96 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/06/ASK_candles_min_1.bi5",
+          "bytes": "15.74 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/07/ASK_candles_min_1.bi5",
+          "bytes": "15.89 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/08/ASK_candles_min_1.bi5",
+          "bytes": "15.75 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/09/ASK_candles_min_1.bi5",
+          "bytes": "14.32 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/10/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/11/ASK_candles_min_1.bi5",
+          "bytes": "3.18 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/12/ASK_candles_min_1.bi5",
+          "bytes": "15.13 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/13/ASK_candles_min_1.bi5",
+          "bytes": "15.75 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/14/ASK_candles_min_1.bi5",
+          "bytes": "16.64 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/15/ASK_candles_min_1.bi5",
+          "bytes": "16.54 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/16/ASK_candles_min_1.bi5",
+          "bytes": "15.33 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/17/ASK_candles_min_1.bi5",
+          "bytes": "1.84 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/18/ASK_candles_min_1.bi5",
+          "bytes": "3.2 KB",
+          "source": "network"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/00h_ticks.bi5",
+          "bytes": "57.45 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/01h_ticks.bi5",
+          "bytes": "89.06 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/02h_ticks.bi5",
+          "bytes": "79.74 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/03h_ticks.bi5",
+          "bytes": "54.42 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/04h_ticks.bi5",
+          "bytes": "53.75 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/05h_ticks.bi5",
+          "bytes": "69.69 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/06h_ticks.bi5",
+          "bytes": "70.48 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/07h_ticks.bi5",
+          "bytes": "76.36 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/08h_ticks.bi5",
+          "bytes": "70.13 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/09h_ticks.bi5",
+          "bytes": "64.21 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/10h_ticks.bi5",
+          "bytes": "74.74 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/11h_ticks.bi5",
+          "bytes": "71.78 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/12h_ticks.bi5",
+          "bytes": "95.75 KB",
+          "source": "cache"
+        },
+        {
+          "url": "http://datafeed.dukascopy.com/datafeed/XAUUSD/2026/09/19/13h_ticks.bi5",
+          "bytes": "128.45 KB",
+          "source": "cache"
+        }
+      ],
+      "normalization": {
+        "preserved_previous_rows": 0,
+        "added_rows": 17400,
+        "raw_rows": 26760,
+        "ignored_zero_volume_rows": 9360,
+        "ignored_incomplete_minutes": 0,
+        "source_changed_flat_rows_preserved": 0,
+        "source_changed_trading_rows": 0
+      }
+    }
+  ],
+  "alignment": [
+    {
+      "month": "2026_08",
+      "bid_only": [],
+      "ask_only": [
+        "2026-08-16 23:59:00"
+      ],
+      "negative_close_spreads": 0
+    },
+    {
+      "month": "2026_09",
+      "bid_only": [],
+      "ask_only": [],
+      "negative_close_spreads": 0
+    },
+    {
+      "month": "2026_10",
+      "bid_only": [],
+      "ask_only": [],
+      "negative_close_spreads": 0
+    }
+  ],
+  "errors": [],
+  "published_at": "2026-10-19T14:15:26.544Z",
+  "common_last_timestamp_utc": "2026-10-19 13:59:00",
+  "download_transport": "http://datafeed.dukascopy.com/datafeed/ (official www redirect; HTTPS unavailable)",
+  "processing_policy": "保留既有 8 月全部資料列；以來源 volume > 0 的已完成分鐘追加 8 月及建立 9、10 月；volume 僅在暫存解析時使用，正式 CSV 仍為五欄。",
+  "raw_artifacts": [
+    {
+      "name": "XAUUSD-2026-07-01-ASK_candles_min_1.bi5",
+      "bytes": 1889,
+      "sha256": "7fd183ac16293976a729a53a0529550abe0b4fc83fdf5acdbd7292dc2304df20"
+    },
+    {
+      "name": "XAUUSD-2026-07-01-BID_candles_min_1.bi5",
+      "bytes": 1889,
+      "sha256": "be2403e0fcfb0575dfec9c7798206bb14fe36f134300ca094c88929df53466d5"
+    },
+    {
+      "name": "XAUUSD-2026-07-02-ASK_candles_min_1.bi5",
+      "bytes": 3261,
+      "sha256": "4c140265a8eb9beb998e018cc9aca8e8accfa30b55c68b94c1867a4d9511d249"
+    },
+    {
+      "name": "XAUUSD-2026-07-02-BID_candles_min_1.bi5",
+      "bytes": 3267,
+      "sha256": "9def614b30e8ee4cfde22ffd1e4f9069bebde5c015b6ff06b2ba0f0eef283e9e"
+    },
+    {
+      "name": "XAUUSD-2026-07-03-ASK_candles_min_1.bi5",
+      "bytes": 16135,
+      "sha256": "a22db3d800a295acaad2237aebb22d17cf4bcb7bccbee8481b0253bfd07f5b33"
+    },
+    {
+      "name": "XAUUSD-2026-07-03-BID_candles_min_1.bi5",
+      "bytes": 16121,
+      "sha256": "974be6ec0e07676b894aa18755814ffc88cbd9ddb09b3114080b2df55dd4bdd5"
+    },
+    {
+      "name": "XAUUSD-2026-07-04-ASK_candles_min_1.bi5",
+      "bytes": 16200,
+      "sha256": "6105e666b3226cec7f07515a19c5e6b52195587e54bfc4d94cfe107066ba1049"
+    },
+    {
+      "name": "XAUUSD-2026-07-04-BID_candles_min_1.bi5",
+      "bytes": 16619,
+      "sha256": "e075f25f8615c9cba8a57a5ef5d3c8b07e35363ee61d78bef389120cc490644c"
+    },
+    {
+      "name": "XAUUSD-2026-07-05-ASK_candles_min_1.bi5",
+      "bytes": 16815,
+      "sha256": "b397e2c56896e7dd842deb7fd256e7af788814f297b7d556ed70ff1e58dda317"
+    },
+    {
+      "name": "XAUUSD-2026-07-05-BID_candles_min_1.bi5",
+      "bytes": 16821,
+      "sha256": "9f3d555f06c0383ad3a79fce86c312615f24d925544468799b5d7416ef3d10f9"
+    },
+    {
+      "name": "XAUUSD-2026-07-06-ASK_candles_min_1.bi5",
+      "bytes": 16640,
+      "sha256": "b59c632d4c578eec3bcbcdc3fc17058c41615ade7608160d59c7842cdd9dcedd"
+    },
+    {
+      "name": "XAUUSD-2026-07-06-BID_candles_min_1.bi5",
+      "bytes": 16673,
+      "sha256": "b50fb8b148a9f991871102a641ebaed65b780c17b6d9d62bd7296b54b2c01205"
+    },
+    {
+      "name": "XAUUSD-2026-07-07-ASK_candles_min_1.bi5",
+      "bytes": 15675,
+      "sha256": "2201ff8bb1dbde8ffcd2e266194635cd6b91d0b820830a6c0fdaa4d30814fd82"
+    },
+    {
+      "name": "XAUUSD-2026-07-07-BID_candles_min_1.bi5",
+      "bytes": 15558,
+      "sha256": "3004d938f38760e312622d3a54aa0659346f4c1e68f6fc367f24215a073c44c4"
+    },
+    {
+      "name": "XAUUSD-2026-07-08-ASK_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "21ec829ebb9df7669fad49d78fd6839072b8a062c2148937fab1232194bc9226"
+    },
+    {
+      "name": "XAUUSD-2026-07-08-BID_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "569b22b9f3cc86f0eee4a779b8a97e2b9761330de079b8423a8bef1c4a044a5a"
+    },
+    {
+      "name": "XAUUSD-2026-07-09-ASK_candles_min_1.bi5",
+      "bytes": 3265,
+      "sha256": "a641f51164f54aab40e695ebcc4dcee576a449b25e444e9e4a6a54c55cb1f0d9"
+    },
+    {
+      "name": "XAUUSD-2026-07-09-BID_candles_min_1.bi5",
+      "bytes": 3296,
+      "sha256": "3c972300d579d3d77d67572cd9a94f5b64343e05c6a85922bcc1400f87c53565"
+    },
+    {
+      "name": "XAUUSD-2026-07-10-ASK_candles_min_1.bi5",
+      "bytes": 16370,
+      "sha256": "b5b64ee1dc988b1894ee064aa4ed63168f42921e35ddca643e0c6cd7e1dcd579"
+    },
+    {
+      "name": "XAUUSD-2026-07-10-BID_candles_min_1.bi5",
+      "bytes": 16241,
+      "sha256": "5fb073528beab8f0976101110387697cd743b431039d12856f5c0c927bf4141a"
+    },
+    {
+      "name": "XAUUSD-2026-07-11-ASK_candles_min_1.bi5",
+      "bytes": 16330,
+      "sha256": "7a5a314776314fb0290be2885235af095dce29e6ebea9a2b4274f3c0e312ca3c"
+    },
+    {
+      "name": "XAUUSD-2026-07-11-BID_candles_min_1.bi5",
+      "bytes": 16678,
+      "sha256": "0f12150081ceb4bd9654022fac1f1660bbd8ec1f64cfb4f3d79e545c022544b9"
+    },
+    {
+      "name": "XAUUSD-2026-07-12-ASK_candles_min_1.bi5",
+      "bytes": 16446,
+      "sha256": "f010bcc07bf00c2a20a7066c10a1dc2b6bc01453681d1e6a05139678ce947c58"
+    },
+    {
+      "name": "XAUUSD-2026-07-12-BID_candles_min_1.bi5",
+      "bytes": 16450,
+      "sha256": "188444287a14bcda3a9e8deb7f806ea5de6a2b757a172163a19c5c99c2d4c78b"
+    },
+    {
+      "name": "XAUUSD-2026-07-13-ASK_candles_min_1.bi5",
+      "bytes": 16629,
+      "sha256": "7bfb6da4143a8887354705ada6608f3b9342d15fd1a4793cdb13abea6321e6be"
+    },
+    {
+      "name": "XAUUSD-2026-07-13-BID_candles_min_1.bi5",
+      "bytes": 16567,
+      "sha256": "df7fa7dee3b991f62f1ffa641bb5b111daf5de64e5427cebbb86b4c67016627d"
+    },
+    {
+      "name": "XAUUSD-2026-07-14-ASK_candles_min_1.bi5",
+      "bytes": 15032,
+      "sha256": "7aabc0652a3f37245580da6e4b9d7b0c30965e8d90c54b80205efc7608271e55"
+    },
+    {
+      "name": "XAUUSD-2026-07-14-BID_candles_min_1.bi5",
+      "bytes": 15108,
+      "sha256": "2638839cea37c1c2d805e9262cbce854050269137750bee17e769042ad903006"
+    },
+    {
+      "name": "XAUUSD-2026-07-15-ASK_candles_min_1.bi5",
+      "bytes": 1889,
+      "sha256": "a014aac722fbafb4355fa95a5148ec861f8988ebcc46479fd46b4cf64237853e"
+    },
+    {
+      "name": "XAUUSD-2026-07-15-BID_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "b9a6c9c0c00592534f9fd91e18708dc304066581112ec02e6a51b60fab175ee5"
+    },
+    {
+      "name": "XAUUSD-2026-07-16-ASK_candles_min_1.bi5",
+      "bytes": 3219,
+      "sha256": "ba79fea3515b5779a8e990fda84543c4ab2933aa6517c890b87eb594fb04ed5d"
+    },
+    {
+      "name": "XAUUSD-2026-07-16-BID_candles_min_1.bi5",
+      "bytes": 3208,
+      "sha256": "2e2bfa9a43db9a9ad14b9bc497ad098f913906177df93eff5fb5ef04ae717acc"
+    },
+    {
+      "name": "XAUUSD-2026-07-17-ASK_candles_min_1.bi5",
+      "bytes": 16116,
+      "sha256": "2287715b2ab112c9f9447a7875e46fa35729d2949377c9752cf45a2a1029a4fa"
+    },
+    {
+      "name": "XAUUSD-2026-07-17-BID_candles_min_1.bi5",
+      "bytes": 16227,
+      "sha256": "7fbc60ac8725cb7c1343bf5059b49c13eb0ef28d99a8cdce58d03366bfa564ad"
+    },
+    {
+      "name": "XAUUSD-2026-07-18-ASK_candles_min_1.bi5",
+      "bytes": 16176,
+      "sha256": "5aaafd8684e2772b36c40e61eab009aa7af333b144ae254ecc1bca7965ab9459"
+    },
+    {
+      "name": "XAUUSD-2026-07-18-BID_candles_min_1.bi5",
+      "bytes": 16330,
+      "sha256": "c043f8db53966565adfc2ab66831eda0a6fc20e9fe55803e3c09e3474a632b41"
+    },
+    {
+      "name": "XAUUSD-2026-07-19-ASK_candles_min_1.bi5",
+      "bytes": 16678,
+      "sha256": "0711d8897475ae325e2d39a418ed7900ffefc51c41dc0ed451cd24b4ed4dafad"
+    },
+    {
+      "name": "XAUUSD-2026-07-19-BID_candles_min_1.bi5",
+      "bytes": 16537,
+      "sha256": "268e6558788cd4ebf998672cfe06d48e334ddd8b4215bd760ea224f885025517"
+    },
+    {
+      "name": "XAUUSD-2026-07-20-ASK_candles_min_1.bi5",
+      "bytes": 16757,
+      "sha256": "1a6e6179326a89e7a3e24a1e0b4eca985159ffe5136abb09e5666e6fd3faddfa"
+    },
+    {
+      "name": "XAUUSD-2026-07-20-BID_candles_min_1.bi5",
+      "bytes": 16678,
+      "sha256": "5fa4220347a96b37de8af80d569eab44a18c795e2aa2998661e84fd25617224d"
+    },
+    {
+      "name": "XAUUSD-2026-07-21-ASK_candles_min_1.bi5",
+      "bytes": 15514,
+      "sha256": "fb928e5ef43fb149469f2ac91927bba01b6682e70a8d654bdea8fda210858848"
+    },
+    {
+      "name": "XAUUSD-2026-07-21-BID_candles_min_1.bi5",
+      "bytes": 15591,
+      "sha256": "7941621c913aed493896cfbf8b999a5e979364cb367ad62878ab834ec4cbe929"
+    },
+    {
+      "name": "XAUUSD-2026-07-22-ASK_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "5f73e02830c28b5cfecf5672c309717a8f4d5c3604489ed278bb9c319d563f6b"
+    },
+    {
+      "name": "XAUUSD-2026-07-22-BID_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "c30ba6fb28bb602e8b94bb32e8cb1ccfc3db0924dd45b4d301fe52c2ff0145a6"
+    },
+    {
+      "name": "XAUUSD-2026-07-23-ASK_candles_min_1.bi5",
+      "bytes": 3289,
+      "sha256": "be8ffe04c7686d482c4b187b6d82b23a8b34320d81daba7b2d5358ffaee77d91"
+    },
+    {
+      "name": "XAUUSD-2026-07-23-BID_candles_min_1.bi5",
+      "bytes": 3286,
+      "sha256": "0cd42088cce63257ce4e4fb4a51c2ceb8e74444dc72c7564d651579816ebd696"
+    },
+    {
+      "name": "XAUUSD-2026-07-24-ASK_candles_min_1.bi5",
+      "bytes": 16921,
+      "sha256": "8b295e47f4f1cd9afe07fdd3ed63c5a35b17de5915ceefb3a99fe00ae6003274"
+    },
+    {
+      "name": "XAUUSD-2026-07-24-BID_candles_min_1.bi5",
+      "bytes": 17062,
+      "sha256": "f2de69f80e8648013f653a5ccb02483c0cd7ce66c01292af9a1a0085a70f3fb2"
+    },
+    {
+      "name": "XAUUSD-2026-07-25-ASK_candles_min_1.bi5",
+      "bytes": 16986,
+      "sha256": "497777e69e54d2dfaed860b6b6c20169f677cc93f1ed18434c81366ef90d158d"
+    },
+    {
+      "name": "XAUUSD-2026-07-25-BID_candles_min_1.bi5",
+      "bytes": 16870,
+      "sha256": "2737e6d70ae45eb3bcf3b2b803b89c12e0f130f04a7ec060cbb99aac8ec23b79"
+    },
+    {
+      "name": "XAUUSD-2026-07-26-ASK_candles_min_1.bi5",
+      "bytes": 16438,
+      "sha256": "5194d02381657c67a7421cd41576f7eeeec5faa555b7665863f0609221626129"
+    },
+    {
+      "name": "XAUUSD-2026-07-26-BID_candles_min_1.bi5",
+      "bytes": 16474,
+      "sha256": "1f74f1a068998364ac726c4f6bd5b6ab812fbae422931c54746c4dedb2be6a74"
+    },
+    {
+      "name": "XAUUSD-2026-07-27-ASK_candles_min_1.bi5",
+      "bytes": 16622,
+      "sha256": "f7f87b4f10454e2e60dbcc0ae69fa32f32edfd237c839ee2c0a74699d617205f"
+    },
+    {
+      "name": "XAUUSD-2026-07-27-BID_candles_min_1.bi5",
+      "bytes": 16617,
+      "sha256": "1b3f4a0a4703d7eac71d068e1102f10bbb573ce35191a3522667173a507b0ea9"
+    },
+    {
+      "name": "XAUUSD-2026-07-28-ASK_candles_min_1.bi5",
+      "bytes": 15644,
+      "sha256": "fcc50fecc431548c436cbf23d744736b64a99ca19517f2fa16aabe72d1c8b431"
+    },
+    {
+      "name": "XAUUSD-2026-07-28-BID_candles_min_1.bi5",
+      "bytes": 15747,
+      "sha256": "2341a69fded5db1e1f5e2036fcec6e4b749160ed5b88f53aa039523a493cc19c"
+    },
+    {
+      "name": "XAUUSD-2026-07-29-ASK_candles_min_1.bi5",
+      "bytes": 1889,
+      "sha256": "49ad7736668f524d8fb58d05dd436b36f80eaaa44b7f13fb80ee5b9633a712ae"
+    },
+    {
+      "name": "XAUUSD-2026-07-29-BID_candles_min_1.bi5",
+      "bytes": 1889,
+      "sha256": "699bfd6173006f21f4480b2c903c2b2ad0497cee1a3d56ac6bd19201c4b58009"
+    },
+    {
+      "name": "XAUUSD-2026-07-30-ASK_candles_min_1.bi5",
+      "bytes": 3342,
+      "sha256": "ff24a02e9d03c22a74027219edbcf84084cd1ee63d6a28df1936a980fe1dea5b"
+    },
+    {
+      "name": "XAUUSD-2026-07-30-BID_candles_min_1.bi5",
+      "bytes": 3344,
+      "sha256": "525fd2688969399c7fa09dfcb3928905914d1060336a359ce18e2b96519dacc7"
+    },
+    {
+      "name": "XAUUSD-2026-07-31-ASK_candles_min_1.bi5",
+      "bytes": 16605,
+      "sha256": "9acc56260e48cc6d092f853dd9408b0686e543df1ca8712dc0f0afd939b955c7"
+    },
+    {
+      "name": "XAUUSD-2026-07-31-BID_candles_min_1.bi5",
+      "bytes": 16521,
+      "sha256": "8aaffddb24fbac22b75f3bb1227bf5e77933bc4d80655bda84f088edab82a560"
+    },
+    {
+      "name": "XAUUSD-2026-08-01-ASK_candles_min_1.bi5",
+      "bytes": 16906,
+      "sha256": "bbcdfc179c266d1f7f128210a21c8cd7b2edd113137b17c84801a34a61f28f93"
+    },
+    {
+      "name": "XAUUSD-2026-08-01-BID_candles_min_1.bi5",
+      "bytes": 17105,
+      "sha256": "4bfd806650933f15992f2c8d925673f54e4b0e7771e9480c12545142a97afd3d"
+    },
+    {
+      "name": "XAUUSD-2026-08-02-ASK_candles_min_1.bi5",
+      "bytes": 16544,
+      "sha256": "d21e02a0dbe5cb6d6a4246901565907dc5b2ca0470e92eb653233c90f58bb4f9"
+    },
+    {
+      "name": "XAUUSD-2026-08-02-BID_candles_min_1.bi5",
+      "bytes": 16575,
+      "sha256": "92d0299bc21f5eeaea13cfa6e6b1be00d098b16bcca0e107e9ed0e04a451e964"
+    },
+    {
+      "name": "XAUUSD-2026-08-03-ASK_candles_min_1.bi5",
+      "bytes": 16695,
+      "sha256": "bbff46e9c6803fb91037c886e88d58249ae46800a71601d61984bd71f0f081fa"
+    },
+    {
+      "name": "XAUUSD-2026-08-03-BID_candles_min_1.bi5",
+      "bytes": 16714,
+      "sha256": "584b50ddebec6ef60aad805d0bad0d2daa7c4e165dd9634629e5eaacec7d498f"
+    },
+    {
+      "name": "XAUUSD-2026-08-04-ASK_candles_min_1.bi5",
+      "bytes": 15290,
+      "sha256": "8e7ed0154dae447c239173e4a698087ccf15daac749f62e0ce81ed7a5ed0bb00"
+    },
+    {
+      "name": "XAUUSD-2026-08-04-BID_candles_min_1.bi5",
+      "bytes": 15232,
+      "sha256": "7e0875e9e3fa7041dcac1313dc2ade63645fa90f3febcb062a7bd6e241a877df"
+    },
+    {
+      "name": "XAUUSD-2026-08-05-ASK_candles_min_1.bi5",
+      "bytes": 1889,
+      "sha256": "1ec90a0e91a4da38c27c117ecbb7a5f25bc44b151e18ef0e7c5345f0901ce0b3"
+    },
+    {
+      "name": "XAUUSD-2026-08-05-BID_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "c49983467ac065bb1aa74a18c542343db73dea0aa6a6e397da291501e676721b"
+    },
+    {
+      "name": "XAUUSD-2026-08-06-ASK_candles_min_1.bi5",
+      "bytes": 3229,
+      "sha256": "97daf65959506a5a80687709cc58fa3ed256451c9581fa957ae73f234765681c"
+    },
+    {
+      "name": "XAUUSD-2026-08-06-BID_candles_min_1.bi5",
+      "bytes": 3218,
+      "sha256": "7e22dc3017ad0e9c0731f8ee0e5cc9d485bc089ddf18d4482a0e66b404f8de7c"
+    },
+    {
+      "name": "XAUUSD-2026-08-07-ASK_candles_min_1.bi5",
+      "bytes": 14451,
+      "sha256": "0a95af55516a61b0362ceac18c423c329e2b61a16a064212edb33c88cee43dbc"
+    },
+    {
+      "name": "XAUUSD-2026-08-07-BID_candles_min_1.bi5",
+      "bytes": 14556,
+      "sha256": "1018fade9da7e0ff9333b7652377b6520b0eda8f786a96daed896a9453788c5c"
+    },
+    {
+      "name": "XAUUSD-2026-08-08-ASK_candles_min_1.bi5",
+      "bytes": 16523,
+      "sha256": "2765cb940e6798fac3143a509a50c71b832586e6dd23485eedfd0357169dbf46"
+    },
+    {
+      "name": "XAUUSD-2026-08-08-BID_candles_min_1.bi5",
+      "bytes": 16582,
+      "sha256": "24cb539ab17a8590dce6cdb2762b5d3fda085b1289667bc9094718d62f596e67"
+    },
+    {
+      "name": "XAUUSD-2026-08-09-ASK_candles_min_1.bi5",
+      "bytes": 16965,
+      "sha256": "f68b0ed7e033fb8823c88d3fe3127e3a5df708e3e4b216b32b5a425b9733fbf6"
+    },
+    {
+      "name": "XAUUSD-2026-08-09-BID_candles_min_1.bi5",
+      "bytes": 16931,
+      "sha256": "0cc8d410bad4de33f7a358bfbea50a9412d243b1a43eb1071980e96c83b7f6d3"
+    },
+    {
+      "name": "XAUUSD-2026-08-10-ASK_candles_min_1.bi5",
+      "bytes": 17252,
+      "sha256": "ff3ff14f304128089746cb50bab9bd69273ac6f3889d02423adfb3383b866539"
+    },
+    {
+      "name": "XAUUSD-2026-08-10-BID_candles_min_1.bi5",
+      "bytes": 17354,
+      "sha256": "350fee6cd9c942ba4db65457eb49776b4d14962c6b9a8d1504c1b2d282865887"
+    },
+    {
+      "name": "XAUUSD-2026-08-11-ASK_candles_min_1.bi5",
+      "bytes": 16254,
+      "sha256": "d16cd35d64be096dbb68d6aa95af94362a43f9730ab9bda4dfc108159667ca08"
+    },
+    {
+      "name": "XAUUSD-2026-08-11-BID_candles_min_1.bi5",
+      "bytes": 16128,
+      "sha256": "0556c1153fc7d688e057fd89418237b4efa4162f1ab9e72b8c25ebf5aac4dae4"
+    },
+    {
+      "name": "XAUUSD-2026-08-12-ASK_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "0f5c15fb95d15f520058d48a348d6033680403a4a7e7e0e19de3af5648b75f98"
+    },
+    {
+      "name": "XAUUSD-2026-08-12-BID_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "922494fb700edd971ab3b8c7a6aea640584c89945e69f0aa2ecc4c5329b41481"
+    },
+    {
+      "name": "XAUUSD-2026-08-13-ASK_candles_min_1.bi5",
+      "bytes": 3378,
+      "sha256": "2b73f83df69f8acd44aad8fe9155fc4c6925ce3609ba5a0ff03b0e4d75dfc90d"
+    },
+    {
+      "name": "XAUUSD-2026-08-13-BID_candles_min_1.bi5",
+      "bytes": 3293,
+      "sha256": "1c12b584fac98227c5ae45a74b8cc35b4b817750a101e78ce890461ab01379e4"
+    },
+    {
+      "name": "XAUUSD-2026-08-14-ASK_candles_min_1.bi5",
+      "bytes": 17444,
+      "sha256": "c792cf5a1b4275a01b272f1cb5258eb9328988154ba6afd1615d78670187a1ab"
+    },
+    {
+      "name": "XAUUSD-2026-08-14-BID_candles_min_1.bi5",
+      "bytes": 17266,
+      "sha256": "dc0148d79b4278fb911b7d7eed4e6b47c7e718ad9f453a406b9ef516dddea578"
+    },
+    {
+      "name": "XAUUSD-2026-08-15-ASK_candles_min_1.bi5",
+      "bytes": 17112,
+      "sha256": "d655712c57ae82d98016e4fd7db3ab50175effdf4ec081ab3d5ae970ce4a2fd1"
+    },
+    {
+      "name": "XAUUSD-2026-08-15-BID_candles_min_1.bi5",
+      "bytes": 17026,
+      "sha256": "8434ae2dc09f6b87e5cc4fe9c9c03087da2f5f9cb6d27815655f8c34c0f42858"
+    },
+    {
+      "name": "XAUUSD-2026-08-16-ASK_candles_min_1.bi5",
+      "bytes": 16715,
+      "sha256": "5bbaaf65f78a8244c4e18c5d42af62941da4a327d07b866cd44e3c841518ef86"
+    },
+    {
+      "name": "XAUUSD-2026-08-16-BID_candles_min_1.bi5",
+      "bytes": 16789,
+      "sha256": "a44b7623797ff08c33a6cd351e82a38789bee60c973c9a3aa972038acd4f223f"
+    },
+    {
+      "name": "XAUUSD-2026-08-17-ASK_candles_min_1.bi5",
+      "bytes": 16786,
+      "sha256": "96240864c4e729d1dae557762e284b11e707865f5b02d3cdccc8f8e1fde8c1e5"
+    },
+    {
+      "name": "XAUUSD-2026-08-17-BID_candles_min_1.bi5",
+      "bytes": 16785,
+      "sha256": "cbe1d6044a4f18935e8b763962fc05adbe371b455ce92e1c92dd22519fa83223"
+    },
+    {
+      "name": "XAUUSD-2026-08-18-ASK_candles_min_1.bi5",
+      "bytes": 15479,
+      "sha256": "7ca63b3887661b32e3cb85130daeca7f99630e8ec6cb1d5ca2cc7b2b12225fe7"
+    },
+    {
+      "name": "XAUUSD-2026-08-18-BID_candles_min_1.bi5",
+      "bytes": 15349,
+      "sha256": "6b529b050cf52065c90741bc45404d26aec067a6a28279b1b87d6800e8ffefb3"
+    },
+    {
+      "name": "XAUUSD-2026-08-19-ASK_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "a9667d24a7a76bf2a9f774e143a34fc5db15dc07185a3107894809e1c52b8b72"
+    },
+    {
+      "name": "XAUUSD-2026-08-19-BID_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "0b4e1cf9edba4395b37acfd1e5f7b3540955e4414ce4d41e1a6914b7926c35dd"
+    },
+    {
+      "name": "XAUUSD-2026-08-20-ASK_candles_min_1.bi5",
+      "bytes": 3198,
+      "sha256": "56a1ae75ee7648ad7c4b7684f4a2e6544dcdd52b5c888a38f50a5a155e8bddb1"
+    },
+    {
+      "name": "XAUUSD-2026-08-20-BID_candles_min_1.bi5",
+      "bytes": 3212,
+      "sha256": "a57a3e4a1e8e6ae78dbc1e32edf4e444bef299494290c84f60953955c2827a7b"
+    },
+    {
+      "name": "XAUUSD-2026-08-21-ASK_candles_min_1.bi5",
+      "bytes": 16229,
+      "sha256": "7d6e3dc31aa55c936d30f2edf6d19fdf406b689792013a27d9188b7f7d66e540"
+    },
+    {
+      "name": "XAUUSD-2026-08-21-BID_candles_min_1.bi5",
+      "bytes": 16334,
+      "sha256": "2e5a9e1f0c088b9fe29cbeaf34b64a8c29ee0c7f928525f824a90da386995a0a"
+    },
+    {
+      "name": "XAUUSD-2026-08-22-ASK_candles_min_1.bi5",
+      "bytes": 16676,
+      "sha256": "3f63796213657dac0e3c78a32659c0cb6de7bde35e2b680e78101bd9de506efe"
+    },
+    {
+      "name": "XAUUSD-2026-08-22-BID_candles_min_1.bi5",
+      "bytes": 16848,
+      "sha256": "3de3c536dba56955a94b98be879e71fd4411443eaf5940967736553d89c2383a"
+    },
+    {
+      "name": "XAUUSD-2026-08-23-ASK_candles_min_1.bi5",
+      "bytes": 16455,
+      "sha256": "cd80537ae2f53dbe0f07ee317b718135acdbd545bbad884b4805e4622a851779"
+    },
+    {
+      "name": "XAUUSD-2026-08-23-BID_candles_min_1.bi5",
+      "bytes": 16450,
+      "sha256": "d49c9f6ba0916db65e305fd0f4de724e7559f40ba19cba97f4af32ca6f0cc48b"
+    },
+    {
+      "name": "XAUUSD-2026-08-24-ASK_candles_min_1.bi5",
+      "bytes": 16815,
+      "sha256": "bb6ab83758620c09afe30d9580ea39172db2cd40ef2494db4858f1c1d03097f0"
+    },
+    {
+      "name": "XAUUSD-2026-08-24-BID_candles_min_1.bi5",
+      "bytes": 16619,
+      "sha256": "93fa5881d4c2fc5165fad1eb8d2fee281b21e0dba0d28b75de3a08fd6805207e"
+    },
+    {
+      "name": "XAUUSD-2026-08-25-ASK_candles_min_1.bi5",
+      "bytes": 15697,
+      "sha256": "1102d5a13332dc7ca422ca40c3aec3da1ad05469829f5e0f11b8af048417d360"
+    },
+    {
+      "name": "XAUUSD-2026-08-25-BID_candles_min_1.bi5",
+      "bytes": 15372,
+      "sha256": "bc504aac28a97d7bdd64745429d9765938af76ea59e448126751c6c297418084"
+    },
+    {
+      "name": "XAUUSD-2026-08-26-ASK_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "a5f19153406fd0af496a3185781712457647e650665048d63a0473d41f7066f6"
+    },
+    {
+      "name": "XAUUSD-2026-08-26-BID_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "6b32a542022c747bfe18bcc71fb3de241beb9bb5a464dafa26d7311c401501c6"
+    },
+    {
+      "name": "XAUUSD-2026-08-27-ASK_candles_min_1.bi5",
+      "bytes": 3273,
+      "sha256": "eaf81f9632415cac464534ab9ad5d581f105fed40b30f46e2f59f95b06d5e81e"
+    },
+    {
+      "name": "XAUUSD-2026-08-27-BID_candles_min_1.bi5",
+      "bytes": 3294,
+      "sha256": "c9c13b08e22fdbfa15a78576aefbfd31ed39eb9e65362b79330e02d749ba247e"
+    },
+    {
+      "name": "XAUUSD-2026-08-28-ASK_candles_min_1.bi5",
+      "bytes": 17026,
+      "sha256": "be8d3d01c6838406624f552f50acf37e901321c2185e9fa20e8f181297e36f69"
+    },
+    {
+      "name": "XAUUSD-2026-08-28-BID_candles_min_1.bi5",
+      "bytes": 17073,
+      "sha256": "2d2c40d08d0be63efa202f00381ba3d95cb6fcc2fc31863700c7000619d18c38"
+    },
+    {
+      "name": "XAUUSD-2026-08-29-ASK_candles_min_1.bi5",
+      "bytes": 16449,
+      "sha256": "d65edb98dce74c2470636cee251373bf4f2efe4c7ddea73974736ec753584ae7"
+    },
+    {
+      "name": "XAUUSD-2026-08-29-BID_candles_min_1.bi5",
+      "bytes": 16663,
+      "sha256": "55adebc1f83f5fb2e1cb8e79116c3af5496725705a82bcf60b5d26059b4ece92"
+    },
+    {
+      "name": "XAUUSD-2026-08-30-ASK_candles_min_1.bi5",
+      "bytes": 16485,
+      "sha256": "ac8026f54974e64b0ff253ac35dfa37bd32b5b2c9a29af977a9e37989df44816"
+    },
+    {
+      "name": "XAUUSD-2026-08-30-BID_candles_min_1.bi5",
+      "bytes": 16742,
+      "sha256": "bc2a1a78bfabf99d6f1b4b9865a4291d6f240afc51b9fc922f67e75ed3566ce4"
+    },
+    {
+      "name": "XAUUSD-2026-09-01-ASK_candles_min_1.bi5",
+      "bytes": 16535,
+      "sha256": "6a22888549f8223a1b6c4bf1b9dd327bc7b2ffd9bb4265dd3ef43bafda06fa4a"
+    },
+    {
+      "name": "XAUUSD-2026-09-01-BID_candles_min_1.bi5",
+      "bytes": 16999,
+      "sha256": "6743be80706488e8621a8e65c2975d61a432dc6a830187b169576d8e08f10e50"
+    },
+    {
+      "name": "XAUUSD-2026-09-02-ASK_candles_min_1.bi5",
+      "bytes": 15560,
+      "sha256": "3deaef1fa6ff8656576101069727871caef6f703db84953f268b6ad9b08a0485"
+    },
+    {
+      "name": "XAUUSD-2026-09-02-BID_candles_min_1.bi5",
+      "bytes": 15607,
+      "sha256": "0e023396a37b7b1e1c33faac2ed5920ce5dfd83644415128a3d42bdbe0f484fe"
+    },
+    {
+      "name": "XAUUSD-2026-09-03-ASK_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "98a29a165e14dac1be067edf8e04c98f79fdc6eb5067335b8dbcd1520ddac174"
+    },
+    {
+      "name": "XAUUSD-2026-09-03-BID_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "9f5f64de347e87e0640db58efbbe966e1fa910f98b8d022adf66985d82a3b561"
+    },
+    {
+      "name": "XAUUSD-2026-09-04-ASK_candles_min_1.bi5",
+      "bytes": 3236,
+      "sha256": "33dd80ea306b4d227c115bc097ed8da15f1472108cd4f0b01462c06c20c7e266"
+    },
+    {
+      "name": "XAUUSD-2026-09-04-BID_candles_min_1.bi5",
+      "bytes": 3239,
+      "sha256": "af48bd08ed6addef3a1e208fbf354a57d6fe5e7167e1f18c19b6d6dc98350f0b"
+    },
+    {
+      "name": "XAUUSD-2026-09-05-ASK_candles_min_1.bi5",
+      "bytes": 16338,
+      "sha256": "e39b1057d5f8bc38771055dd80049ad02eeb703c8481645eec0181706eda1b64"
+    },
+    {
+      "name": "XAUUSD-2026-09-05-BID_candles_min_1.bi5",
+      "bytes": 16123,
+      "sha256": "37103e4de2dd2b6afd29e323215597cc706b7f8e27c6137b4049422017b0c725"
+    },
+    {
+      "name": "XAUUSD-2026-09-06-ASK_candles_min_1.bi5",
+      "bytes": 16117,
+      "sha256": "8f425bf8a56529646ebf445f326a794f5f2e4dfac179eed6c0f28997843157e7"
+    },
+    {
+      "name": "XAUUSD-2026-09-06-BID_candles_min_1.bi5",
+      "bytes": 15951,
+      "sha256": "3d3b7e8eea672f74620e1a855acf2c4126ec61718777c613b72b43bce7042fb2"
+    },
+    {
+      "name": "XAUUSD-2026-09-07-ASK_candles_min_1.bi5",
+      "bytes": 16268,
+      "sha256": "55743e419fb06133f19023f4361b70f3c38ebdf9c08a4f7eef536b62da92ab2d"
+    },
+    {
+      "name": "XAUUSD-2026-09-07-BID_candles_min_1.bi5",
+      "bytes": 16360,
+      "sha256": "30c5b174a1b3c7036f4b8f6c41f6c94320bc10fa3db78780c944afce2eb7184a"
+    },
+    {
+      "name": "XAUUSD-2026-09-08-ASK_candles_min_1.bi5",
+      "bytes": 16126,
+      "sha256": "06ed228ac7310da3bb2720dee212a30763601932e83042ddd1b35c7e3c75b781"
+    },
+    {
+      "name": "XAUUSD-2026-09-08-BID_candles_min_1.bi5",
+      "bytes": 16185,
+      "sha256": "1ef950a4fa543005d2198cb2041db21f28e4acb54a98de0847cfcf13c5390420"
+    },
+    {
+      "name": "XAUUSD-2026-09-09-ASK_candles_min_1.bi5",
+      "bytes": 14661,
+      "sha256": "49a21dfc9e241b37879d072f3bcdc7d8ec37fd5fa10e9ac89efda1871bef82ff"
+    },
+    {
+      "name": "XAUUSD-2026-09-09-BID_candles_min_1.bi5",
+      "bytes": 14888,
+      "sha256": "0a4306002c73b80f1cd62f1977a035344114bf8a2bdd4c75a57e4a25179d655d"
+    },
+    {
+      "name": "XAUUSD-2026-09-10-ASK_candles_min_1.bi5",
+      "bytes": 1888,
+      "sha256": "bcff14d099158f5db37d42e12d2d550a7217ae6419c6454ddc37f4c0e7b6824b"
+    },
+    {
+      "name": "XAUUSD-2026-09-10-BID_candles_min_1.bi5",
+      "bytes": 1889,
+      "sha256": "6044b13693fe2d48c91bbcb6fcc8064dce0c8cdf1e0631c8eb0774afb12c773d"
+    },
+    {
+      "name": "XAUUSD-2026-09-11-ASK_candles_min_1.bi5",
+      "bytes": 3256,
+      "sha256": "bf792dd302684503eb5cce4be1569c520745715859db757316255ab81a5a8968"
+    },
+    {
+      "name": "XAUUSD-2026-09-11-BID_candles_min_1.bi5",
+      "bytes": 3232,
+      "sha256": "6397ce245a32a3f06b8dcaf5bca5cb00283e1944cbe5a21e2de396610cb071ee"
+    },
+    {
+      "name": "XAUUSD-2026-09-12-ASK_candles_min_1.bi5",
+      "bytes": 15498,
+      "sha256": "857210f5bb9fe865adc6405c6a74bdf5dfe02e711319567c8f31c12f186d44fe"
+    },
+    {
+      "name": "XAUUSD-2026-09-12-BID_candles_min_1.bi5",
+      "bytes": 15671,
+      "sha256": "15129502b22f48b70c13d6d591335e836ea85f60a13a44808814f7308f79a503"
+    },
+    {
+      "name": "XAUUSD-2026-09-13-ASK_candles_min_1.bi5",
+      "bytes": 16127,
+      "sha256": "c27e8fec5986d4024a18047aba47d5a51485053b5f08c425bd75e90a8e97de38"
+    },
+    {
+      "name": "XAUUSD-2026-09-13-BID_candles_min_1.bi5",
+      "bytes": 16257,
+      "sha256": "305b2ff62a1cf4628b1d75add88f9707f105da8b764e0a6d922476d321024758"
+    },
+    {
+      "name": "XAUUSD-2026-09-14-ASK_candles_min_1.bi5",
+      "bytes": 17039,
+      "sha256": "1eb971e45a6468a1f01f3957303e53e54321884be73bd49dbac30272524f97ed"
+    },
+    {
+      "name": "XAUUSD-2026-09-14-BID_candles_min_1.bi5",
+      "bytes": 17172,
+      "sha256": "3d9102425cf7c2b4686e75f74266639d5314ca2a3913295d1b201364c2cd543d"
+    },
+    {
+      "name": "XAUUSD-2026-09-15-ASK_candles_min_1.bi5",
+      "bytes": 16934,
+      "sha256": "32d1f8fad382ad7b6fc3bec45b00287012cef2561aefe2ff3538d86318034549"
+    },
+    {
+      "name": "XAUUSD-2026-09-15-BID_candles_min_1.bi5",
+      "bytes": 16791,
+      "sha256": "4a50289156e6864a79032e534c084e07c29ef40ac9a3416804c6f779b3cecfb5"
+    },
+    {
+      "name": "XAUUSD-2026-09-16-ASK_candles_min_1.bi5",
+      "bytes": 15700,
+      "sha256": "a54914cdb69b28b05c6aa472ad8c87b5158da43b60eb327703bdc64903e5b574"
+    },
+    {
+      "name": "XAUUSD-2026-09-16-BID_candles_min_1.bi5",
+      "bytes": 15748,
+      "sha256": "381b6e27139832901e6c06308e1bbd019610469dd1bf2f55d82decf2e2a429f3"
+    },
+    {
+      "name": "XAUUSD-2026-09-17-ASK_candles_min_1.bi5",
+      "bytes": 1889,
+      "sha256": "b194a58cef12d5ba5e737e0a0633392607fdc679a142b7a1463d412bb7cbf3a1"
+    },
+    {
+      "name": "XAUUSD-2026-09-17-BID_candles_min_1.bi5",
+      "bytes": 1889,
+      "sha256": "fedc26e948fce7aa53e75cb1cb3c63755733f30ed3507b0c1d98be6af1d75233"
+    },
+    {
+      "name": "XAUUSD-2026-09-18-ASK_candles_min_1.bi5",
+      "bytes": 3280,
+      "sha256": "3366907b892c63c306dfa765e258bf64eb69bd2e5d51b227e1aeffdf1c4126b1"
+    },
+    {
+      "name": "XAUUSD-2026-09-18-BID_candles_min_1.bi5",
+      "bytes": 3286,
+      "sha256": "68cc89e97584daa5ec7caf565464b93d0ea31a02cdde4867db809d594f0ef3f4"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-00h_ticks.bi5",
+      "bytes": 58831,
+      "sha256": "fae7cd2c0e10069804a0b3eba401bf25f46538fd431f367ebd2026b6cc11d288"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-01h_ticks.bi5",
+      "bytes": 91199,
+      "sha256": "d60ccbb7328d0f4acb8e2cecf3403d98612dde0db5fe123de0eb5a6177df142b"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-02h_ticks.bi5",
+      "bytes": 81650,
+      "sha256": "5a60e83146b7ac2c9ce931f27d5f3c918ce67e388d366e4d9db415c88667a3a5"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-03h_ticks.bi5",
+      "bytes": 55731,
+      "sha256": "7f07ce7d99ca46bf3162fdece2961a075320b1545948925be9cc7dd8e3aa7ba4"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-04h_ticks.bi5",
+      "bytes": 55041,
+      "sha256": "ea04a75b545c2d08ca4851ec21341c332f6fd6c54066491754dc26cb7224bd2e"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-05h_ticks.bi5",
+      "bytes": 71361,
+      "sha256": "810b006d13874ce87335c0a1b20c1eae2280e4da3558de7cd25bd137baa57621"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-06h_ticks.bi5",
+      "bytes": 72175,
+      "sha256": "407f5355f4a106f7e6060f447fef04534a14293ca39950edd5c41ce600983070"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-07h_ticks.bi5",
+      "bytes": 78191,
+      "sha256": "c97bcec25119827734028f3435b782503b053c87657d641d6581f65f63e53272"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-08h_ticks.bi5",
+      "bytes": 71818,
+      "sha256": "3da300e0d260de4732361c6169839768ff3dbdacf820855ba6425e1e32c21a24"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-09h_ticks.bi5",
+      "bytes": 65750,
+      "sha256": "c626e142adabc2087cc8a74e8ea06462f1bd1615fb07c2bcdc87ce147f863612"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-10h_ticks.bi5",
+      "bytes": 76529,
+      "sha256": "a086b00c57daca11fcb45c82d452d3cdf90279581d9a0453a642d4265932d360"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-11h_ticks.bi5",
+      "bytes": 73504,
+      "sha256": "4d5d419fa0a6d11d669aad8b3ac2eced0d142c192268966d4c5020712741d81e"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-12h_ticks.bi5",
+      "bytes": 98049,
+      "sha256": "17225cb11046dd3eb4f91f48250d131eeed02a8873834d17b2fbac178285eda0"
+    },
+    {
+      "name": "XAUUSD-2026-09-19-13h_ticks.bi5",
+      "bytes": 131529,
+      "sha256": "62cd2f209df6654f8cf772760e9465498c93ce4a8b90812618f7c92144f0fe7a"
+    }
+  ]
+}

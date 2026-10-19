@@ -198,4 +198,6 @@
 "xauusd_ask_m1_2026_05.csv","2232014","44641","44641","ok","calendar minute coverage","2026-05-01 00:00:00","2026-05-31 23:59:00","0","0"
 "xauusd_ask_m1_2026_06.csv","1823944","36480","43201","ok_market_session","contains market-session rows; non-trading minutes are not present","2026-06-01 00:00:00","2026-06-30 23:59:00","4","1862"
 "xauusd_ask_m1_2026_07.csv","1886953","37740","44641","ok_market_session","contains market-session rows; non-trading minutes are not present","2026-07-01 00:00:00","2026-07-31 20:59:00","4","1862"
-"xauusd_ask_m1_2026_08.csv","1205804","24117","44641","ok_market_session","contains market-session rows; non-trading minutes are not present","2026-08-02 00:00:00","2026-08-20 23:58:00","5","1621"
+"xauusd_ask_m1_2026_08.csv","1688832","33778","44641","ok_market_session","已下載自然月全部日期；交易時段以資料商回應為準","2026-08-02 00:00:00","2026-08-31 23:59:00","12","2941"
+"xauusd_ask_m1_2026_09.csv","1510227","30209","43201","ok_market_session","已下載自然月全部日期；交易時段以資料商回應為準","2026-09-01 00:00:00","2026-09-30 23:59:00","23","2941"
+"xauusd_ask_m1_2026_10.csv","869814","17401","44641","partial_latest_month","最新月份未完整；含資料商目前提供的交易時段資料","2026-10-01 00:00:00","2026-10-19 13:59:00","12","2941"
