@@ -36,7 +36,7 @@ pip install pyyaml
 python tools/repo_check.py
 ```
 
-<!-- BEGIN SHARED RULES profile=project source_commit=4745cf922beb sha256=85d58eff1ac856608c9edf544ef24ffad079e068a875f701c6dad55990fb30de tool_sha256=0d3503b1696a1cdd37eaebd4baa5778baa3f8acba9e866c542d17bab95152a1c -->
+<!-- BEGIN SHARED RULES profile=project source_commit=d60e4626f550 sha256=6592d7259c748fbf641a2141ca06fd283b4afc1e2ce9db295f3d05c0c38fdae6 tool_sha256=0d3503b1696a1cdd37eaebd4baa5778baa3f8acba9e866c542d17bab95152a1c -->
 ## 共用規則
 
 本區塊由 Trading-Research-Workspace 的 `rules/` 自動產生，勿手改；要修改請改 WS 正本後重新同步。本 repo 硬規則與共用規則衝突時以較嚴格者為準；使用者當下的明確指示優先。
@@ -110,9 +110,17 @@ python tools/repo_check.py
 - 本機專用設定以 `*.example.json` 範本提交，實際檔案不提交；secrets 另放 `.env` 類檔案，不寫進 JSON 參數檔。
 - 既有的 YAML 參數檔在各自的搬遷階段改為 JSON，搬遷前不單獨改格式。
 
+### 檔案放置
+
+- `memory-bank/` 放目前狀態；超過行數上限時，舊內容逐字移到 `memory-bank/archive/`，不刪除。
+- `docs/specs/` 放施工說明；`reports/` 放驗證證據；`docs/` 放其他參考文件。
+- 研究內容只放在擁有它的 repo：指標研究在 Indicator-Lab 該指標的單元目錄，策略研究在 Strategy-Backtest-Lab，私人研究在 Trading-Knowledge-Lab。其他 repo 只放連結，不放副本。
+- 跨 repo 的暫時交接檔放在 Trading-Research-Workspace 的 `handoff/`，正式歸檔後刪除。
+- 工具產生的檔案（索引、快取、log、建置輸出）不提交，列入 `.gitignore`。
+
 ### Codebase Memory（CBM）
 
 - CBM（程式碼知識圖譜，`codebase-memory-mcp`）是選用工具：環境有此工具時，跨檔案分析前可優先查詢本 repo 的 CBM project；沒有時直接讀原始碼，不視為阻塞。
 - CBM 結果必須回到目前原始碼驗證；宣稱「某符號不存在或沒有呼叫者」前，須確認索引新鮮度或直接搜尋原始碼。
-- 每個 repo 是獨立 CBM project，共享索引位於 `.codebase-memory/graph.db.zst`。有工具且做了結構性變更時，順手刷新並提交索引；沒有工具時不必補做，也不建立 PENDING。
+- 索引只存在各人電腦上：`.codebase-memory/` 必須列在 `.gitignore`，不得提交。每個 repo 是獨立的 CBM project，需要時在本機自行建立索引。
 <!-- END SHARED RULES -->
