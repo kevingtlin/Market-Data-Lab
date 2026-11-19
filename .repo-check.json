@@ -1,20 +1,8 @@
 {
   "profile": "project",
   "memory_bank": "memory-bank",
-  "base_ref": "origin/claude/phase1g-plan",
-  "protected_paths": [
-    "CLAUDE.md",
-    ".repo-check.json",
-    "README.md",
-    "[!A]*.md",
-    "memory-bank/*",
-    "registry/*",
-    "datasets/*",
-    "reports/*",
-    "docs/*",
-    "tools/*",
-    "xauusd/*"
-  ],
+  "base_ref": "origin/main",
+  "protected_paths": [],
   "scan_exclude": [
     "xauusd/*"
   ]
